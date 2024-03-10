@@ -1,0 +1,34 @@
+{% load static i18n %}
+
+<div class="row">
+    <div class="col-7"></div>
+    <div class="col-5">
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <th scope="row">{% trans "Status" %}:</th>
+                    <td>{{order.status}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">{% trans "Price" %}:</th>
+                    <td>{{order.products_price}} {% trans "DA" %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">{% trans "Shipping" %}:</th>
+                    <td>{{order.shipping_price}} {% trans "DA" %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">{% trans "TVA 19%" %}:</th>
+                    <td>0 {% trans "DA" %}</td>
+                </tr>
+                <tr class="text-danger">
+                    <th scope="row">{% trans "Total Price" %}:</th>
+                    <td>{{order.bill_total}} {% trans "DA" %}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="text-start">
+
+</div>

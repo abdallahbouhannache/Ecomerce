@@ -1,0 +1,66 @@
+{% extends 'admin/base_site.html' %}
+{% load static i18n %}
+
+
+{% block branding %} <h1>{% trans "Warehouse" %}</h1> {% endblock %}
+
+{% block title %}
+    {% trans "Warehouse" %} - {% trans "Edit" %} {{ warehouse.name }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+    &rsaquo;
+    <a href="{% url 'admin:shipping_warehouse_changelist' %}">{% translate 'Shipping' %}</a>
+    &rsaquo;
+    <a href="{% url 'admin:shipping_warehouse_changelist' %}">{% translate 'Warehouses' %}</a>
+    &rsaquo;
+    {{ warehouse.name }}
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <h2>{% trans "List of Wilaya" %}</h2>
+    <p>{% trans "You can set initial price for each wilaya" %}, {% trans "also you can set price for communes" %}.</p>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <table style="width: 100%;" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Distance Warehouse -> Wilaya <sp style="color:red;">*</sp></th>
+                    <th scope="col">Initial Price <sp style="color:red;">*</sp></th>
+                    <th scope="col">Postal Code</th>
+                    <th scope="col">Communes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for wilaya in warehouse_wilaya %}
+                    <tr>
+                        <th scope="row">{{wilaya.id}}</th>
+                        <td>{{wilaya.name}}</td>
+                        <td>
+                            <input type="number" name="wilaya_distance_between" value="{{wilaya.distance_between}}" min=0 class="vTextField" required="" id="id_wilaya_distance_between_{{wilaya.id}}">
+                            {{measruing_unit}}
+                        </td>
+                        <td>
+                            <input type="number" name="wilaya_initial_price" value="{{wilaya.initial_price}}" min=0 class="vTextField" required="" id="id_wilaya_initial_price_{{wilaya.id}}">
+                            {{currency}}
+                        </td>
+                        <td>{{wilaya.postal_code}}</td>
+                        <td><a href="{% url 'admin_communes_list' warehouse.id wilaya.id %}" target='_blank' class='changelink'>Communes Settings</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div style="padding:10px;">
+            <button onclick="window.close();" class="deletelink">Cancel</button>
+            <input type="submit" value="Save" class="default" name="_save">
+        </div>
+    </form>
+    
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{store}}{% endblock title %}
+
+{% block style %}
+    <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+    <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script> 
+{% endblock style %}
+
+{% block content %}
+
+    <div class="container text-center mt-3" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <h1 class="text-start pb-2">{{store}}</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="text-danger" href="{% url 'merchant_store_list' store_slug %}">
+                {% if LANG_CODE == 'ar' %}
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                {% else %}
+                    <i class="fas fa-arrow-alt-circle-left"></i>
+                {% endif %}
+                 {% trans "Go Back" %}
+                </a>
+            </div>
+            <form method="POST" class="col-md-10 border rounded text-start" enctype="multipart/form-data">
+                {% if mode == "add" %}
+                    <h4 class="m-2">{% trans "Complete this form to add a product" %}</h4>
+                {% elif mode == "update" %}
+                    <h4 class="m-2">{% trans "Updating product" %}</h4>
+                {% endif %}
+                <hr>
+                {% csrf_token %}
+                {{add_product_form|crispy}}
+                <div class="text-end m-3">
+                    <a href="{% url 'merchant_store_list' store_slug %}" class="btn btn-secondary"><i class="fas fa-window-close"></i> {% trans "Cancel" %}</a>
+                    {% if mode == "update" %}
+                        <a href="{% url 'store_delete_product' product.store.slug product.slug %}" class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i> {% trans "Delete" %}
+                        </a>
+                    {% endif %}
+                    
+                    <button class="btn btn-success" type="submit">
+                        {% if mode == "add" %}
+                            {% trans "Add Product" %}
+                        {% elif mode == "update" %}
+                            <i class="fas fa-pencil-alt"></i> {% trans "Update Product" %}
+                        {% endif %}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+
+{% block script %}
+<script src="{% static 'js/fix_bs5.js' %}"></script>
+{% endblock script %}

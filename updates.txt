@@ -1,0 +1,18 @@
+NIF
+REGISTER COMMERCE
+LOGO
+NOM
+PRENOM
+NOM COMMERCIAL
+ADDRESS
+N° TELEPHONE
+
+
+
+Tajr: Bon de command
+Client: Facture
+
+
+
+
+Coucher Facture

@@ -1,0 +1,46 @@
+{% load static i18n %}
+{% load multi_values %}
+
+{% if items %}
+    <h5 class="mb-1">{% trans "ORDERS SUMMARY" %}</h5> <br>
+    {% for item in items %}
+        <div class="d-flex align-items-center pb-2 text-start">
+            <a class="d-block flex-shrink-0" href="{% url 'detail_product' item.product.slug %}">
+                <img class="m-2" src="{{item.product.thumbnail.url}}" width="64" alt="Product">
+            </a>
+            <div class="ml-1 mr-1">
+                <h6 class="widget-product-title"><a class="text-dark" href="{% url 'detail_product' item.product.slug %}"><i class="fas fa-edit"></i> {{item.product|multi_name}}</a></h6>
+                <div class="widget-product-meta"><span class="text-accent me-2">{% trans "Price" %}: <small>{{item.product.sell_price}} {% trans "DA" %} </small></span><span class="text-muted"> / {% trans "Qty" %}: {{item.qty}}</span></div>
+                <div class="widget-product-meta"><span class="text-accent me-2">{% trans "Shipping Price" %}: <small> {% if item.shipping == "free" %} {{item.product.free_shipping}} {% else %} {{item.paid_shipping}} {% endif %}  {% trans "DA" %} </small></span></div>
+            </div>
+        </div>
+        <form action="{% url 'cart-delete' %}" method="POST">{% csrf_token %}
+            <input type="hidden" name="id" value="{{item.id}}">
+            <input type="hidden" name="next" value="{{request.path}}">
+            <div class="text-end">
+                <button class="button-as-anchor"><small class="text-danger"><i class="fas fa-trash-alt"></i> Delete Item</small></button>
+            </div>
+        </form>
+        {% if item.msg %}
+            <p class="extra-msg text-secondary">{{item.msg}}</p>
+        {% endif %}
+        <hr>
+    {% endfor %}
+    <div class="text-end">
+        <table class="table table-borderless">
+            <tbody>
+            <tr>
+                <td>{% trans "SHIPPING" %}</td>
+                <td>{{total_shipping}} {% trans "DA" %}</td>
+            </tr>
+            <tr>
+                <th scope="row">{% trans "TOTAL" %}</th>
+                <td><b>{{total}} {% trans "DA" %}</b></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <p>{% trans "No Items" %}</p>
+    <a href="{% url 'list_products' %}">{% trans "Check out our products" %}</a>
+{% endif %}

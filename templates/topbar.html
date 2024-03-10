@@ -1,0 +1,24 @@
+{% load i18n static %}
+
+<div class="dropdown show mb-1">
+    {% if user.is_superuser %}<a href="{% url 'admin:index' %}" class="mx-1 text-light"><i class="fas fa-users-cog"></i> {% trans "Administration" %}</a>{% endif %}
+    {% if user.member.merchant %}<a href="{% url 'merchant_store_index' %}" class="mx-1 text-light"><i class="fas fa-store"></i> {% trans "My Stores" %}</a>{% endif %}
+    
+    
+    <a class="languages-switcher btn btn-secondary dropdown-toggle" href="#" role="button" id="languagesBar" data-bs-toggle="dropdown" aria-expanded="false">
+        {% if LANG_CODE == "ar" %}
+            <img width="20" src="{% static 'languages/AR.svg' %}" alt="{% trans "Arabic" %}">
+        {% elif LANG_CODE == "fr" %}
+            <img width="20" src="{% static 'languages/FR.svg' %}" alt="{% trans "French" %}">
+        {% else %}
+            <img width="20" src="{% static 'languages/EN.svg' %}" alt="{% trans "English" %}">
+        {% endif %}
+    </a>
+    
+    <ul class="bg-dark dropdown-menu" aria-labelledby="languagesBar">
+        <a class="dropdown-item" href="{% url 'i18n_switcher' 'ar' %}"><img width="20" src="{% static 'languages/AR.svg' %}" alt="{% trans "Arabic" %}"></a>
+        <a class="dropdown-item" href="{% url 'i18n_switcher' 'fr' %}"><img width="20" src="{% static 'languages/FR.svg' %}" alt="{% trans "French" %}"></a>
+        <a class="dropdown-item" href="{% url 'i18n_switcher' 'en' %}"><img width="20" src="{% static 'languages/EN.svg' %}" alt="{% trans "English" %}"></a>
+    </ul>
+    
+</div>

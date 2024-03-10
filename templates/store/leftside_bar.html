@@ -1,0 +1,25 @@
+{% load static i18n %}
+
+<div class="col-md-3 text-start mb-5">
+    <div class="list-group">
+        {% for store in stores %}
+            <a href="{% url 'merchant_store_list' store.slug %}" class="list-group-item list-group-item-action block {% if store.slug in request.path %}active{% endif %}">
+            {{store.store_name}} {% if store.verified %}<i class="fas fa-check-circle text-primary" {% if store.slug in request.path %}style="color:white !important;"{% endif %}></i>{% endif %}
+            </a>
+        {% endfor %}
+    </div>
+
+    {% if stores_on_hold %}
+        <span class="mt-2 text-secondary">On Hold</span>
+        <div class="list-group">
+            {% for store_oh_hold in stores_on_hold %}
+                <p class="list-group-item list-group-item-action block">{{store_oh_hold.store_name}}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="p-3">
+        <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#addStore"><i class="fas fa-plus-circle"></i> {% trans "ADD A NEW STORE" %}</a>
+        {% include 'store/widgets/add_store.html' %}
+        </div>
+</div>

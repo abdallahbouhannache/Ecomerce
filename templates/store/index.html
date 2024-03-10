@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "My Stores" %}{% endblock title %}
+
+
+{% block content %}
+
+    <div class="container text-center mt-3" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <h1 class="text-start pb-2">{% trans "My Stores" %}</h1>
+        <hr>
+        <div class="row">
+            {% include 'store/leftside_bar.html' %}
+            
+            <div class="p-1 pl-2 pr-2 col-md-8 text-start">
+                <h3>{% trans "Welcome" %} {{user.username}}</h3>
+                <p>{% trans "You can create your store and start adding products" %}</p>
+                <img src="{% static 'icons/store.svg' %}" width="200" alt="{% trans "Store" %}">
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block script %}
+
+    {% include 'membership/update_commune.html' %}
+
+{% endblock script %}

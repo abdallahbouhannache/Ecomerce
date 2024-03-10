@@ -1,0 +1,32 @@
+{% load static i18n %}
+
+
+<form class="row mb-2 mt-1" method="GET">
+    <div class="col-lg-4 mb-1">
+        <input type="text" name="byName" class="form-control" id="byName" placeholder="{% trans "Search by name" %}">
+    </div>
+    <div class="col-lg-3 mb-1">
+        <select name="orderBy" class="form-control" id="orderBy">
+            <option value="">{% trans "Order" %}</option>
+            <option value="product">{% trans "Product" %}</option>
+            <option value="quantity">{% trans "Quantity" %}</option>
+            <option value="current_price">{% trans "Price" %}</option>
+            <option value="commission">{% trans "Commission" %}</option>
+            <option value="purchases">{% trans "Purchases" %}</option>
+            <option value="rating">{% trans "Rating" %}</option>
+        </select>
+    </div>
+    <div class="col-lg-3 mb-1">
+        <select name="orderDir" class="form-control" id="orderDir">
+            <option value="">{% trans "Direction" %}</option> 
+            <option value="ascending">{% trans "Ascending" %}</option>
+            <option value="descending">{% trans "Descending" %}</option>
+        </select>
+    </div>
+    <div class="col-lg-2 mb-1">
+        <button type="submit" class="btn btn-secondary btn-block"><i class="fas fa-search"></i> </button>
+        <div class="text-center">
+            {% if request.GET %}<a href="{{request.path}}" class="text-danger">{% trans "Clear" %} <i class="fas fa-backspace"></i></a>{% endif %}
+        </div>
+    </div>
+</form>

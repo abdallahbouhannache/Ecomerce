@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load multi_values %}
+{% load cart_handling %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{{product|multi_name}}{% endblock title %}
+
+{% block content %}
+    <div class="bg-dark text-white p-3">
+        <nav aria-label="breadcrumb bg-dark">
+            <ol class="breadcrumb bg-dark">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="fas fa-home"></i> {% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'list_products' %}?category={{product.category.slug}}"><i class="{{product.category.icon}}"></i> {{product.category}}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{product|multi_name}}</li>
+            </ol>
+        </nav>
+        <div class="product-title container">
+            <h2>{{product|multi_name}}</h2>
+        </div>
+    </div>
+
+    <div class="product-content container text-center pt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div id="previewThumb" class="col-lg-10 product-thumb order-lg-1" style="background-image:url('{{product.thumbnail.url}}')"></div>
+                    <div class="col-lg-2 " style="margin:auto;">
+                        <div class="row">
+                            <div class="product-gallery-item col">
+                                <p style="cursor:pointer;" onclick="changeBgImg('{{product.thumbnail.url}}')">
+                                    <img class="rounded" width="50" src="{{product.thumbnail.url}}" alt="{{product.thumbnail.name}}">
+                                </p>
+                            </div>
+                            {% comment %} START IMAGES {% endcomment %}
+                            {% if product.image1 %}
+                                <div class="product-gallery-item col">
+                                    <p style="cursor:pointer;" onclick="changeBgImg('{{product.image1.url}}')">
+                                        <img class="rounded" width="50" src="{{product.image1.url}}">
+                                    </p>
+                                </div>
+                            {% endif %}
+                            {% if product.image2 %}
+                                <div class="product-gallery-item col">
+                                    <p style="cursor:pointer;" onclick="changeBgImg('{{product.image2.url}}')">
+                                        <img class="rounded" width="50" src="{{product.image2.url}}">
+                                    </p>
+                                </div>
+                            {% endif %}
+                            {% if product.image3 %}
+                                <div class="product-gallery-item col">
+                                    <p style="cursor:pointer;" onclick="changeBgImg('{{product.image3.url}}')">
+                                        <img class="rounded" width="50" src="{{product.image3.url}}">
+                                    </p>
+                                </div>
+                            {% endif %}
+                            {% if product.image4 %}
+                                <div class="product-gallery-item col">
+                                    <p style="cursor:pointer;" onclick="changeBgImg('{{product.image4.url}}')">
+                                        <img class="rounded" width="50" src="{{product.image4.url}}">
+                                    </p>
+                                </div>
+                            {% endif %}
+                            {% comment %} END IMAGES {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+                <hr class="d-xl-none">
+                {% comment %} Rating & Purchases {% endcomment %}
+                <div class="rating">
+                    {% if product.rating == 5 %}
+                        <img src="{% static 'stars/5.svg' %}" alt="5 Stars">
+                    {% elif product.rating == 4 %}
+                        <img src="{% static 'stars/4.svg' %}" alt="4 Stars">
+                    {% elif product.rating == 3 %}
+                        <img src="{% static 'stars/3.svg' %}" alt="3 Stars">
+                    {% elif product.rating == 2 %}
+                        <img src="{% static 'stars/2.svg' %}" alt="2 Stars">
+                    {% elif product.rating == 1 %}
+                        <img src="{% static 'stars/1.svg' %}" alt="1 Star">
+                    {% elif product.rating == 0 %}
+                        <img src="{% static 'stars/0.svg' %}" alt="0 Star">
+                    {% endif %}
+                    <span>{% trans "Num. of Orders" %}: {{product.purchases}} {% trans "Orders" %}</span>
+                </div>
+                {% comment %} Price {% endcomment %}
+                <div class="price m-3 d-flex justify-content-center">
+                    <h4 class="text-primary">{{product.sell_price}} {% trans "DA" %}</h4>
+                    {% if product.prev_price %}<del class="text-danger ml-1 mr-1">{{product.prev_price}} {% trans "DA" %}</del>{% endif %}
+                </div>
+                {% comment %} Description {% endcomment %}
+                <div class="description">
+                    {{product|multi_description}}
+                </div>
+                {% comment %} Cart Form {% endcomment %}
+                {% if product.stock != 0  %}
+                    <form method="POST" class="text-start">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="quantity">{% trans "Quantity" %}</label> <span class="asteriskField">*</span>
+                            <input type="number" class="form-control" name="quantity" id="quantity" min=1 max={{product.stock}} {% if request.session.cart|get_item_quantity:product.id %}value={{request.session.cart|get_item_quantity:product.id}}{% else %}value=1{% endif %} required>
+                        </div>
+                        <div class="form-group">
+                        {% if not user.is_authenticated %}
+                            <small class="text-danger">{% trans "Please login to calculate paid shipping price" %}</small> <br>
+                        {% endif %}
+                            <label for="shipping"><i class="fas fa-shipping-fast"></i> {% trans "Shipping Price" %}:</label>
+                            <select class="form-control" id="shipping" name="shipping">
+                                <option {% if request.session.cart|get_item_shipping_method:product.id == "free" %}selected{% endif %} value="free">{% trans "Free Shipping" %}</option>
+                                {% if shipping_price %}
+                                    <option {% if request.session.cart|get_item_shipping_method:product.id == "paid" %}selected{% endif %} value="paid">{{shipping_price}} {% trans "DA" %} ({{user.member.get_wilaya_display}} - {{user.member.get_commune_display}})</option>
+                                {% endif %}
+                            </select>
+                            <small>{% trans "Free Shipping" %} 1 - 60 {% trans "Days" %}</small> <br>
+                            {% if shipping_price %}
+                                <small>{% trans "Paid Shipping" %} 1 - 7 {% trans "Days" %}</small> <br>
+                            {% endif %}
+                            <small class="text-muted">{% trans "Shipping price may change in cart when you purchase multiple items" %}</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="next" value="{{request.path}}">
+                            <label for="orderDetails">{% trans "Your Order Details" %}</label>
+                            <textarea class="form-control" name="orderDetails" id="orderDetails" rows="3">{% if request.session.cart|get_item_message:product.id %}{{ request.session.cart|get_item_message:product.id }}{% endif %}</textarea>
+                            <small>{% trans "For Example: Size XL and Color RED" %}</small>
+                        </div>
+                        {% if request.session.cart|get_item_message:product.id or request.session.cart|get_item_quantity:product.id %}
+                            <button type="submit" class="btn btn-danger btn-block"><i class="fas fa-cart-arrow-down"></i> {% trans "Update Cart" %}</button>
+                        {% else %}
+                            <button type="submit" class="btn btn-warning btn-block"><i class="fas fa-cart-arrow-down"></i> {% trans "Add To Cart" %}</button>
+                        {% endif %}
+                    </form>
+                {% else %}
+                    <h3>{% trans "This item is not available in stock" %}</h3>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+
+{% block script %}
+<script>
+    function changeBgImg(imgURL){
+        $('#previewThumb').css('backgroundImage', `url(${imgURL})`);
+    }
+</script>
+{% endblock script %}

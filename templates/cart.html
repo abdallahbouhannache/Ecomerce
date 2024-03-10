@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load multi_values %}
+{% load cart_handling %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{% trans "Cart" %} ({{cart|length}} {% trans "items" %}){% endblock title %}
+
+{% block content %}
+    <div class="bg-dark text-white p-3">
+        <nav aria-label="breadcrumb bg-dark">
+            <ol class="breadcrumb bg-dark">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="fas fa-home"></i> {% trans "Home" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "Cart" %}</li>
+            </ol>
+        </nav>
+        <div class="cart-title container">
+            <h2>{% trans "Cart" %}</h2>
+        </div>
+    </div>
+
+    <div class="container {% if LANG_CODE == "ar" %}text-right{% endif %}">
+        <div class="row">
+            <div class="col-lg-6" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+                {% include 'cart_widgets/form.html' %}
+            </div>
+            <div class="col-lg-6 ">
+                <div class="cart-content container text-center pt-5 pb-5" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+                    {% include 'cart_widgets/items.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}
+
+
+{% block script %}
+    <script>
+        $('#id_payment_method').change(function(){
+        let data= $(this).val();
+            if (data === "direct") {
+                //Swal.fire({
+                //    icon: 'error',
+                //    text: 'الدفع الإلكتروني غير متاح حاليا',
+                //})
+                //$(this).val("cash");
+                $("#confirmOrderButton").html('<img alt="Porto" height="30px" width="30px" src="https://certweb.satim.dz/img/logo-cib.svg"> Submit Order / تأكيد الطلب')
+            } else {
+                $("#confirmOrderButton").html("Submit Order / تأكيد الطلب")
+            }            
+        });
+    </script>
+
+    {% include 'membership/update_commune.html' %}
+
+{% endblock script %}
+

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load crispy_forms_tags %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{% trans "Welcome" %} {{request.user.username}}{% endblock title %}
+
+
+{% block content %}
+    <div class="container text-center mt-3" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <h1 class="text-start pb-2">{% trans "Dashboard" %}</h1>
+        <div class="row">
+            <div class="col-md-4 text-start mb-5 ">
+                <div class="list-group">
+                    <a href="{% url 'account_display' %}" class="list-group-item list-group-item-action block active">{% trans "My Profile" %}</a>
+                    <a href="{% url 'orders-list' %}" class="list-group-item list-group-item-action">{% trans "My Orders" %}</a>
+                </div>
+            </div>
+            
+            <form method="POST" class="col-md-8 border rounded text-start"> {% csrf_token %}
+                <h5 class="m-2">{% trans "Edit your profile" %}</h5>
+                <hr>
+                <p>{% trans "Username" %}: {{user.username}}</p>
+                <p>{% trans "Email" %}: {{user.email}}</p>
+                <p>{% trans "Phone Number" %}: {{user.member.phone_number}}</p>
+                <hr>
+                <h6 class="m-2 text-muted">{% trans "Shipping Informations" %}</h6>
+                {{form|crispy}}
+                <input type="hidden" name="next" value="{{ request.GET.next }}">
+                <div class="text-right mb-2">
+                    <button type="submit" class="btn btn-danger">{% trans "Update Informations" %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+
+
+{% block script %}
+
+    {% include 'membership/update_commune.html' %}
+
+{% endblock script %}

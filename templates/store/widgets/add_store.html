@@ -1,0 +1,21 @@
+{% load static i18n %}
+{% load crispy_forms_tags %}
+
+<div class="modal fade" id="addStore" tabindex="-1" aria-labelledby="addStoreLabel" aria-hidden="true">
+    <form action="{% url 'submit_new_store' %}" method="POST" class="modal-dialog" role="document" enctype="multipart/form-data">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addStoreLabel">{% trans "Add Store" %}</h5>
+        </div>
+        <div class="modal-body">
+            <input type="hidden" value="{{request.path}}" name="next">
+            {% csrf_token %}
+            {{add_store_form|crispy}}
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="ml-1 mr-1 btn btn-secondary" data-bs-dismiss="modal">{% trans "Close" %}</button>
+            <button type="submit" class="ml-1 mr-1 btn btn-danger">{% trans "Confirm" %}</button>
+        </div>
+        </div>
+    </form>
+</div>

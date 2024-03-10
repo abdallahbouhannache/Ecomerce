@@ -1,0 +1,1690 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 20:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: home/abstractions.py:12
+msgid "Arabic Name"
+msgstr "Nom en arabe"
+
+#: home/abstractions.py:12
+msgid "Write name in Arabic"
+msgstr ""
+
+#: home/abstractions.py:13
+msgid "French Name"
+msgstr "Nom en français"
+
+#: home/abstractions.py:13
+msgid "Write name in French"
+msgstr ""
+
+#: home/abstractions.py:14
+msgid "English Name"
+msgstr "Nom en anglais"
+
+#: home/abstractions.py:14
+msgid "Write name in English"
+msgstr ""
+
+#: home/abstractions.py:15 store/models.py:20
+msgid "Slug"
+msgstr "Slug"
+
+#: home/admin.py:9 src/elamanecc.py:7
+msgid "Elamane Communication and Contact"
+msgstr "Elamane Communication et Contact"
+
+#: home/admin.py:22
+msgid "Bill Total"
+msgstr "Total de la facture"
+
+#: home/admin.py:49 templates/cart_widgets/items.html:13
+#: templates/history/order_detail_widgets/items.html:9
+#: templates/history/order_detail_widgets/prices.html:13
+#: templates/store/list.html:38 templates/store/widgets/filters.html:13
+msgid "Price"
+msgstr "Prix"
+
+#: home/admin.py:50 home/models.py:70 templates/store/list.html:39
+#: templates/store/widgets/filters.html:14
+msgid "Commission"
+msgstr "Commission"
+
+#: home/constants.py:5
+msgid "Pay Cash on Delivery"
+msgstr "Paiement à la livraison"
+
+#: home/constants.py:6
+msgid "Carte EDAHABIA / CIB"
+msgstr "Carte EDAHABIA / CIB"
+
+#: home/forms.py:12
+msgid "Check Captcha"
+msgstr ""
+
+#: home/forms.py:13
+msgid "Payment Options"
+msgstr "Options de paiement"
+
+#: home/models.py:37
+msgid "Icon Code"
+msgstr "Code d'icône"
+
+#: home/models.py:40 home/models.py:56 templates/admin/reserve_index.html:20
+msgid "Category"
+msgstr "Catégorie"
+
+#: home/models.py:41 templates/categories.html:7
+msgid "Categories"
+msgstr "Catégories"
+
+#: home/models.py:54
+msgid "Show"
+msgstr ""
+
+#: home/models.py:54
+msgid "Hide/Display this product"
+msgstr ""
+
+#: home/models.py:55
+#, fuzzy
+#| msgid "Delete"
+msgid "Deleted"
+msgstr "Supprimer"
+
+#: home/models.py:55
+msgid "Merchant mark this item as deleted"
+msgstr ""
+
+#: home/models.py:56
+msgid "Please choose a category"
+msgstr ""
+
+#: home/models.py:57 membership/models.py:12 templates/products/list.html:23
+#: templates/store/index.html:18
+msgid "Store"
+msgstr "Magasin"
+
+#: home/models.py:57
+msgid "Store who selling this product"
+msgstr ""
+
+#: home/models.py:58 shipping/models.py:16
+#: templates/shipping/admin_communes_list.html:5
+#: templates/shipping/admin_communes_list.html:8
+#: templates/shipping/admin_wilaya_list.html:5
+#: templates/shipping/admin_wilaya_list.html:8
+msgid "Warehouse"
+msgstr ""
+
+#: home/models.py:58
+msgid "Warehouse where this product is stored"
+msgstr ""
+
+#: home/models.py:59
+msgid "Arabic Description"
+msgstr "Description en arabe"
+
+#: home/models.py:59
+msgid "Write a description in Arabic"
+msgstr ""
+
+#: home/models.py:60
+msgid "French Description"
+msgstr "Description en français"
+
+#: home/models.py:60
+msgid "Write a description in French"
+msgstr ""
+
+#: home/models.py:61
+msgid "English Description"
+msgstr "Description en anglais"
+
+#: home/models.py:61
+msgid "Write a description in English"
+msgstr ""
+
+#: home/models.py:62
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: home/models.py:62
+msgid "Add a thumbnail for this product"
+msgstr ""
+
+#: home/models.py:63
+#, fuzzy
+#| msgid "Image"
+msgid "Image 1"
+msgstr "Image"
+
+#: home/models.py:64
+#, fuzzy
+#| msgid "Image"
+msgid "Image 2"
+msgstr "Image"
+
+#: home/models.py:65
+#, fuzzy
+#| msgid "Image"
+msgid "Image 3"
+msgstr "Image"
+
+#: home/models.py:66
+#, fuzzy
+#| msgid "Image"
+msgid "Image 4"
+msgstr "Image"
+
+#: home/models.py:67 templates/store/list.html:37
+msgid "Stock"
+msgstr ""
+
+#: home/models.py:67
+msgid "How many items you have to stock?"
+msgstr ""
+
+#: home/models.py:68
+msgid "Previous Price"
+msgstr "Prix précédent"
+
+#: home/models.py:68
+msgid "The previouse price of this product"
+msgstr ""
+
+#: home/models.py:69
+msgid "Current Price"
+msgstr "Prix actuel"
+
+#: home/models.py:69
+msgid "The current price of this product"
+msgstr ""
+
+#: home/models.py:70
+msgid "How much do you want our commission for each product sold?"
+msgstr ""
+
+#: home/models.py:71
+msgid "Number Of Purchases"
+msgstr "Nombre d'achats"
+
+#: home/models.py:72 templates/store/list.html:41
+#: templates/store/widgets/filters.html:16
+msgid "Rating"
+msgstr "Évaluation"
+
+#: home/models.py:72
+msgid "Rating from 0 to 5"
+msgstr ""
+
+#: home/models.py:73
+msgid "Length (m)"
+msgstr ""
+
+#: home/models.py:73
+msgid "Length of this product in meter"
+msgstr ""
+
+#: home/models.py:74
+msgid "Width (m)"
+msgstr ""
+
+#: home/models.py:74
+msgid "Width of this product in meter"
+msgstr ""
+
+#: home/models.py:75
+msgid "Height (m)"
+msgstr ""
+
+#: home/models.py:75
+msgid "Height of this product in meter"
+msgstr ""
+
+#: home/models.py:76
+msgid "Weight (Kg)"
+msgstr ""
+
+#: home/models.py:76
+msgid "Weight of this product in kilogram"
+msgstr ""
+
+#: home/models.py:77
+msgid "Created at"
+msgstr "Créé à"
+
+#: home/models.py:80 home/models.py:109
+#: templates/history/order_detail_widgets/items.html:8
+#: templates/store/list.html:36 templates/store/widgets/filters.html:11
+msgid "Product"
+msgstr "Produit"
+
+#: home/models.py:81
+msgid "Products"
+msgstr "Produits"
+
+#: home/models.py:108
+msgid "Order Date"
+msgstr "Date de commande"
+
+#: home/models.py:110 templates/history/order_detail_widgets/items.html:10
+#: templates/products/detail.html:108 templates/store/widgets/filters.html:12
+msgid "Quantity"
+msgstr "Quantité"
+
+#: home/models.py:111
+msgid "Individual Price"
+msgstr "Prix Unitaire"
+
+#: home/models.py:112
+msgid "Message"
+msgstr "Message"
+
+#: home/models.py:113
+msgid "Ship Date"
+msgstr "Date de livraison"
+
+#: home/models.py:116 home/models.py:212 templates/history/order_detail.html:4
+#: templates/history/order_detail.html:21 templates/history/orders_list.html:36
+#: templates/store/widgets/filters.html:10
+msgid "Order"
+msgstr "Commande"
+
+#: home/models.py:117 home/models.py:151 templates/history/orders_list.html:4
+#: templates/products/detail.html:89
+msgid "Orders"
+msgstr "Commandes"
+
+#: home/models.py:140
+msgid "Waiting"
+msgstr "En attente"
+
+#: home/models.py:141
+msgid "Shipped"
+msgstr "Livré"
+
+#: home/models.py:142
+msgid "Completed"
+msgstr ""
+
+#: home/models.py:143
+#, fuzzy
+#| msgid "Return & Refund"
+msgid "Returned"
+msgstr "Remboursement & Retour"
+
+#: home/models.py:144
+#, fuzzy
+#| msgid "Cancel Orders"
+msgid "Canceled"
+msgstr "Annuler les commandes"
+
+#: home/models.py:145
+msgid "Refunded"
+msgstr ""
+
+#: home/models.py:147
+msgid "First Name"
+msgstr "Prénom"
+
+#: home/models.py:147
+#, fuzzy
+#| msgid "First Name"
+msgid "First Name at Elamamecc"
+msgstr "Prénom"
+
+#: home/models.py:148
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: home/models.py:148
+msgid "Last Name at Elamamecc"
+msgstr ""
+
+#: home/models.py:149 templates/history/order_detail.html:22
+msgid "Key"
+msgstr "Clé"
+
+#: home/models.py:149
+#, fuzzy
+#| msgid "elamanecc"
+msgid "Order ID of Elamanecc"
+msgstr "elamanecc"
+
+#: home/models.py:150 membership/models.py:10
+msgid "User"
+msgstr "Utilisateur"
+
+#: home/models.py:152
+#, fuzzy
+#| msgid "Previous Price"
+msgid "Products Price"
+msgstr "Prix précédent"
+
+#: home/models.py:153 templates/cart_widgets/items.html:14
+#: templates/products/detail.html:115
+msgid "Shipping Price"
+msgstr "Prix de livraison"
+
+#: home/models.py:154 templates/history/order_detail.html:27
+#: templates/history/orders_list.html:25
+msgid "Payment Option"
+msgstr "Mode de paiement"
+
+#: home/models.py:155 templates/page/success_table.html:11
+#, fuzzy
+#| msgid "Order Date"
+msgid "Order ID"
+msgstr "Date de commande"
+
+#: home/models.py:155
+msgid "Order Number of SATIM"
+msgstr ""
+
+#: home/models.py:156
+#, fuzzy
+#| msgid "Order Date"
+msgid "Order Status"
+msgstr "Date de commande"
+
+#: home/models.py:156
+msgid "Order Status of SATIM"
+msgstr ""
+
+#: home/models.py:157
+#, fuzzy
+#| msgid "Error code"
+msgid "Error Code"
+msgstr "Code d'erreur"
+
+#: home/models.py:157
+#, fuzzy
+#| msgid "Error code"
+msgid "Error Code of SATIM"
+msgstr "Code d'erreur"
+
+#: home/models.py:158
+#, fuzzy
+#| msgid "Message"
+msgid "Error Message"
+msgstr "Message"
+
+#: home/models.py:158
+msgid "Error Message of SATIM"
+msgstr ""
+
+#: home/models.py:159
+#, fuzzy
+#| msgid "Icon Code"
+msgid "Action Code"
+msgstr "Code d'icône"
+
+#: home/models.py:159
+msgid "Action Code of SATIM"
+msgstr ""
+
+#: home/models.py:160
+#, fuzzy
+#| msgid "Arabic Description"
+msgid "Action Code Description"
+msgstr "Description en arabe"
+
+#: home/models.py:160
+msgid "Action Code Description of SATIM"
+msgstr ""
+
+#: home/models.py:161
+msgid "SVFE Response"
+msgstr ""
+
+#: home/models.py:161
+msgid "SVFE Response of the SATIM card"
+msgstr ""
+
+#: home/models.py:162
+msgid "PAN"
+msgstr ""
+
+#: home/models.py:162
+msgid "Masked number of the SATIM card"
+msgstr ""
+
+#: home/models.py:163
+msgid "Expiration"
+msgstr ""
+
+#: home/models.py:163
+msgid "Expiration date of the SATIM card"
+msgstr ""
+
+#: home/models.py:164
+msgid "Cardholder Name"
+msgstr ""
+
+#: home/models.py:164
+msgid "Cardholder Name of SATIM client"
+msgstr ""
+
+#: home/models.py:165
+msgid "Amount"
+msgstr ""
+
+#: home/models.py:165
+msgid "Amount should paid in centime with SATIM"
+msgstr ""
+
+#: home/models.py:166 templates/page/success_table.html:27
+msgid "Deposit Amount"
+msgstr ""
+
+#: home/models.py:166
+msgid "Paid Amount in centime with SATIM"
+msgstr ""
+
+#: home/models.py:167
+#, fuzzy
+#| msgid "Current Price"
+msgid "Currency Code"
+msgstr "Prix actuel"
+
+#: home/models.py:167
+msgid "Currency Code ISO4217"
+msgstr ""
+
+#: home/models.py:168 templates/page/success_table.html:19
+msgid "Approval Code"
+msgstr ""
+
+#: home/models.py:168
+msgid "Approval Code of SATIM"
+msgstr ""
+
+#: home/models.py:169
+msgid "Auth Code"
+msgstr ""
+
+#: home/models.py:169
+msgid "Auth Code of SATIM should always be 2"
+msgstr ""
+
+#: home/models.py:170
+msgid "IP"
+msgstr ""
+
+#: home/models.py:170
+msgid "Address IP of SATIM client"
+msgstr ""
+
+#: home/models.py:171
+#, fuzzy
+#| msgid "Payment Date"
+msgid "Payment URL"
+msgstr "Date de paiement"
+
+#: home/models.py:172 home/models.py:173
+msgid "Client ID"
+msgstr ""
+
+#: home/models.py:172
+msgid "Client ID of SATIM"
+msgstr ""
+
+#: home/models.py:173
+msgid "Binding ID of SATIM"
+msgstr ""
+
+#: home/models.py:174
+#, fuzzy
+#| msgid "Paid"
+msgid "Is Paid ?"
+msgstr "Payé"
+
+#: home/models.py:175
+#, fuzzy
+#| msgid "Created at"
+msgid "Create Date"
+msgstr "Créé à"
+
+#: home/models.py:176
+msgid "Auto Delete Date"
+msgstr ""
+
+#: home/models.py:176
+msgid "Time after deleting this bill of not paid"
+msgstr ""
+
+#: home/models.py:177 templates/history/order_detail_widgets/prices.html:9
+#: templates/history/orders_list.html:27
+msgid "Status"
+msgstr "Statut"
+
+#: home/models.py:177
+msgid "Status of Elamanecc"
+msgstr ""
+
+#: home/models.py:178
+msgid "Params"
+msgstr ""
+
+#: home/models.py:178
+msgid "Params of SATIM client"
+msgstr ""
+
+#: home/models.py:181
+msgid "Bill"
+msgstr "Facture"
+
+#: home/models.py:182
+msgid "Bills"
+msgstr "Factures"
+
+#: home/models.py:196 templates/membership/edit_account.html:24
+msgid "Email"
+msgstr "Email"
+
+#: home/models.py:197
+msgid "Unsubscribe Code"
+msgstr "Code de désabonnement"
+
+#: home/models.py:200
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: home/models.py:201
+msgid "Subscribers"
+msgstr "Les Abonnés"
+
+#: home/models.py:210
+#, fuzzy
+#| msgid "File Name"
+msgid "Name"
+msgstr "Nom de fichier"
+
+#: home/models.py:211
+msgid "Image"
+msgstr "Image"
+
+#: home/models.py:213
+msgid "Hide"
+msgstr ""
+
+#: home/models.py:216 home/models.py:217
+msgid "Carousel"
+msgstr ""
+
+#: home/payments.py:71
+msgid "Order ID is required"
+msgstr ""
+
+#: home/payments.py:72
+msgid "You are not allowed to access here."
+msgstr ""
+
+#: home/views/cart.py:86
+msgid "There are no items in your cart, please choose items first"
+msgstr ""
+
+#: home/views/cart.py:120
+msgid ""
+"The quantity you wish to purchase for {} is greater than the quantity in "
+"stock"
+msgstr ""
+
+#: home/views/cart.py:145
+msgid "Please choose the products you wish to purchase first"
+msgstr ""
+
+#: home/views/cart.py:210
+msgid "Bill has been created, you can track your order in My Orders page"
+msgstr ""
+"La facture a été créée, vous pouvez suivre votre commande dans la page Mes "
+"commandes"
+
+#: home/views/email.py:26
+msgid "Please fix these errors:"
+msgstr "Veuillez corriger ces erreurs:"
+
+#: home/views/email.py:37
+#, python-brace-format
+msgid "{email} has been subscribed to our newsletter"
+msgstr "{email} a été abonné à notre newsletter"
+
+#: home/views/email.py:39
+#, fuzzy, python-brace-format
+#| msgid "{email} has been subscribed to our newsletter"
+msgid "{email} already subscribed to our newsletter"
+msgstr "{email} a été abonné à notre newsletter"
+
+#: home/views/order.py:86
+msgid ""
+"The order Nº{} has been canceled, you will be refunded if you paid using CIB"
+msgstr ""
+
+#: home/views/order.py:88
+msgid "The order Nº{} can not canceled, please contact support"
+msgstr ""
+
+#: home/views/products.py:82
+msgid "The quantity you wish to purchase is greater than the quantity in stock"
+msgstr ""
+
+#: home/views/products.py:87
+msgid "Item has been added to cart"
+msgstr "L'article a été ajouté au panier"
+
+#: membership/abstractions.py:9 membership/forms.py:11
+#: templates/cart_widgets/form.html:17
+#: templates/membership/edit_account.html:25
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: membership/abstractions.py:10 membership/forms.py:12 shipping/models.py:13
+#: templates/cart_widgets/form.html:23
+msgid "Address"
+msgstr "Adresse"
+
+#: membership/abstractions.py:11 membership/forms.py:13
+msgid "Wilaya"
+msgstr "Wilaya"
+
+#: membership/abstractions.py:12 membership/forms.py:14
+msgid "Commune"
+msgstr "Commune"
+
+#: membership/abstractions.py:13 membership/forms.py:16
+msgid "Zip Code"
+msgstr "Code postal"
+
+#: membership/constants.py:4
+msgid "Adrar"
+msgstr ""
+
+#: membership/constants.py:5
+msgid "Chlef"
+msgstr ""
+
+#: membership/constants.py:6
+msgid "Laghouat"
+msgstr ""
+
+#: membership/constants.py:7
+msgid "Oum El Bouaghi"
+msgstr ""
+
+#: membership/constants.py:8
+msgid "Batna"
+msgstr ""
+
+#: membership/constants.py:9
+msgid "Bejaia"
+msgstr ""
+
+#: membership/constants.py:10
+msgid "Biskra"
+msgstr ""
+
+#: membership/constants.py:11
+msgid "Béchar"
+msgstr ""
+
+#: membership/constants.py:12
+msgid "Blida"
+msgstr ""
+
+#: membership/constants.py:13
+msgid "Bouira"
+msgstr ""
+
+#: membership/constants.py:14
+msgid "Tamanrasset"
+msgstr ""
+
+#: membership/constants.py:15
+msgid "Tébessa"
+msgstr ""
+
+#: membership/constants.py:16
+msgid "Tlemcen"
+msgstr ""
+
+#: membership/constants.py:17
+msgid "Tiaret"
+msgstr ""
+
+#: membership/constants.py:18
+msgid "Tizi Ouzou"
+msgstr ""
+
+#: membership/constants.py:19
+msgid "Alger"
+msgstr ""
+
+#: membership/constants.py:20
+msgid "Djelfa"
+msgstr ""
+
+#: membership/constants.py:21
+msgid "Jijel"
+msgstr ""
+
+#: membership/constants.py:22
+msgid "Sétif"
+msgstr ""
+
+#: membership/constants.py:23
+msgid "Saïda"
+msgstr ""
+
+#: membership/constants.py:24
+msgid "Skikda"
+msgstr ""
+
+#: membership/constants.py:25
+msgid "Sidi Bel Abbes"
+msgstr ""
+
+#: membership/constants.py:26
+msgid "Annaba"
+msgstr ""
+
+#: membership/constants.py:27
+msgid "Guelma"
+msgstr ""
+
+#: membership/constants.py:28
+msgid "Constantine"
+msgstr ""
+
+#: membership/constants.py:29
+msgid "Medea"
+msgstr ""
+
+#: membership/constants.py:30
+msgid "Mostaganem"
+msgstr ""
+
+#: membership/constants.py:31
+msgid "M'Sila"
+msgstr ""
+
+#: membership/constants.py:32
+msgid "Mascara"
+msgstr ""
+
+#: membership/constants.py:33
+msgid "Ouargla"
+msgstr ""
+
+#: membership/constants.py:34
+msgid "Oran"
+msgstr ""
+
+#: membership/constants.py:35
+msgid "El Bayadh"
+msgstr ""
+
+#: membership/constants.py:36
+msgid "Illizi"
+msgstr ""
+
+#: membership/constants.py:37
+msgid "Bordj Bou Arreridj"
+msgstr ""
+
+#: membership/constants.py:38
+msgid "Boumerdes"
+msgstr ""
+
+#: membership/constants.py:39
+msgid "El Tarf"
+msgstr ""
+
+#: membership/constants.py:40
+msgid "Tindouf"
+msgstr ""
+
+#: membership/constants.py:41
+msgid "Tissemsilt"
+msgstr ""
+
+#: membership/constants.py:42
+msgid "El Oued"
+msgstr ""
+
+#: membership/constants.py:43
+msgid "Khenchela"
+msgstr ""
+
+#: membership/constants.py:44
+msgid "Souk Ahras"
+msgstr ""
+
+#: membership/constants.py:45
+msgid "Tipaza"
+msgstr ""
+
+#: membership/constants.py:46
+msgid "Mila"
+msgstr ""
+
+#: membership/constants.py:47
+msgid "Aïn Defla"
+msgstr ""
+
+#: membership/constants.py:48
+msgid "Naama"
+msgstr ""
+
+#: membership/constants.py:49
+msgid "Aïn Temouchent"
+msgstr ""
+
+#: membership/constants.py:50
+msgid "Ghardaia"
+msgstr ""
+
+#: membership/constants.py:51
+msgid "Relizane"
+msgstr ""
+
+#: membership/forms.py:11
+msgid "For example: 0770605062 or +213770209494"
+msgstr "Par exemple: 0770605062 ou +213770209494"
+
+#: membership/forms.py:12
+msgid "For example: 123 Cité Les Arbres"
+msgstr "Par exemple: 123 Cité Les Arbres"
+
+#: membership/forms.py:13
+msgid "Wilaya example: Constantine"
+msgstr "Exemple de Wilaya: Constantine"
+
+#: membership/forms.py:14
+msgid "Commune example: Béni Hamidane"
+msgstr "Exemple de Commune: Béni Hamidane"
+
+#: membership/forms.py:18
+msgid "Zip Code example: 25220"
+msgstr "Exemple de Code Postal: 25220"
+
+#: membership/forms.py:32
+msgid "Email is already taken by another user."
+msgstr "L'e-mail est déjà pris par un autre utilisateur."
+
+#: membership/models.py:11
+msgid "Merchant"
+msgstr ""
+
+#: membership/models.py:15
+msgid "Member"
+msgstr "Membre"
+
+#: membership/models.py:16
+msgid "Members"
+msgstr "Membres"
+
+#: membership/views/account.py:59
+msgid "Your account informations has been updated"
+msgstr "Les informations de votre compte ont été mises à jour"
+
+#: membership/views/authentication.py:56
+#, fuzzy
+#| msgid "Your account informations has been updated"
+msgid "Your account has been created"
+msgstr "Les informations de votre compte ont été mises à jour"
+
+#: page/abstractions.py:9
+#, fuzzy
+#| msgid "English Name"
+msgid "English Title"
+msgstr "Nom en anglais"
+
+#: page/abstractions.py:10
+#, fuzzy
+#| msgid "French Name"
+msgid "French Title"
+msgstr "Nom en français"
+
+#: page/abstractions.py:11
+#, fuzzy
+#| msgid "Arabic Name"
+msgid "Arabic Title"
+msgstr "Nom en arabe"
+
+#: page/abstractions.py:12
+msgid "English Content"
+msgstr "Contenu en anglais"
+
+#: page/abstractions.py:13
+msgid "French Content"
+msgstr "Contenu en français"
+
+#: page/abstractions.py:14
+msgid "Arabic Content"
+msgstr "Contenu en arabe"
+
+#: page/admin.py:30 page/models.py:12 page/models.py:13 templates/footer.html:9
+#: templates/registration/create_account.html:23
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: page/admin.py:45 page/models.py:22 page/models.py:23
+#: templates/footer.html:10
+msgid "Term Of Use"
+msgstr "Conditions d'utilisation"
+
+#: page/admin.py:60 templates/footer.html:11
+msgid "Track My Order"
+msgstr "Suivre ma commande"
+
+#: page/admin.py:74 page/models.py:42 page/models.py:43
+#: templates/footer.html:12
+msgid "Cancel Orders"
+msgstr "Annuler les commandes"
+
+#: page/admin.py:89 page/models.py:52 page/models.py:53
+#: templates/footer.html:13
+msgid "Return & Refund"
+msgstr "Remboursement & Retour"
+
+#: page/admin.py:104 page/models.py:62 page/models.py:63
+#: templates/footer.html:15
+msgid "About Us"
+msgstr "À propos de nous"
+
+#: page/admin.py:119 page/models.py:72 page/models.py:73
+#: templates/footer.html:14
+msgid "Contact Us"
+msgstr "Nous contacter"
+
+#: page/models.py:32 page/models.py:33
+msgid "Track Orders"
+msgstr "Suivi des commandes"
+
+#: shipping/models.py:12
+#, fuzzy
+#| msgid "French Name"
+msgid "Warehouse Name"
+msgstr "Nom en français"
+
+#: shipping/models.py:17 templates/shipping/admin_communes_list.html:17
+#: templates/shipping/admin_wilaya_list.html:17
+msgid "Warehouses"
+msgstr ""
+
+#: shipping/views/administration.py:42 shipping/views/administration.py:73
+#, fuzzy
+#| msgid "Your payment was successfull"
+msgid "You have updated wilaya settings successfuly"
+msgstr "Votre paiement a réussi"
+
+#: src/elamanecc.py:8
+msgid "e-commerce"
+msgstr "e-commerce"
+
+#: src/elamanecc.py:9
+msgid "Cité Thenia Mila 43000"
+msgstr "Cité Thenia Mila 43000"
+
+#: store/models.py:16
+#, fuzzy
+#| msgid "Store Name"
+msgid "Store Owner"
+msgstr "Nom de Magasin"
+
+#: store/models.py:17
+msgid "First name"
+msgstr "Prénom"
+
+#: store/models.py:18
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: store/models.py:19
+msgid "Store Name"
+msgstr "Nom de Magasin"
+
+#: store/models.py:21
+msgid "Logo"
+msgstr "Logo"
+
+#: store/models.py:22
+msgid "NIF"
+msgstr "NIF"
+
+#: store/models.py:23
+msgid "Register Commerce"
+msgstr "Register Commerce"
+
+#: store/models.py:24
+#, fuzzy
+#| msgid "Actions"
+msgid "Active"
+msgstr "Actions"
+
+#: store/models.py:25
+msgid "Verified"
+msgstr "Vérifié"
+
+#: store/models.py:26
+#, fuzzy
+#| msgid "Last Name"
+msgid "Bank Name"
+msgstr "Nom de famille"
+
+#: store/models.py:27
+msgid "Bank RIP"
+msgstr ""
+
+#: store/models.py:30
+msgid "store"
+msgstr "Magasin"
+
+#: store/models.py:31
+msgid "stores"
+msgstr "Magasins"
+
+#: store/views/user_store.py:39
+msgid "Store has been created, we will review your request within 72 hours"
+msgstr ""
+
+#: store/views/user_store.py:189
+#, fuzzy
+#| msgid "Products Forsale"
+msgid "Product has been disabled"
+msgstr "Produits à vendre"
+
+#: templates/admin/custom_base.html:9 templates/base.html:9
+msgid "elamanecc"
+msgstr "elamanecc"
+
+#: templates/admin/custom_base.html:31 templates/base.html:42
+msgid "Ok"
+msgstr "Ok"
+
+#: templates/admin/reserve_index.html:5 templates/topbar.html:4
+msgid "Administration"
+msgstr "Administration"
+
+#: templates/cart.html:7 templates/cart.html:14 templates/cart.html:18
+msgid "Cart"
+msgstr "Panier"
+
+#: templates/cart.html:7
+msgid "items"
+msgstr "articles"
+
+#: templates/cart.html:13 templates/products/detail.html:13
+#: templates/shipping/admin_communes_list.html:13
+#: templates/shipping/admin_wilaya_list.html:13
+msgid "Home"
+msgstr "Accueil"
+
+#: templates/cart_widgets/form.html:6
+#, fuzzy
+#| msgid "Confirm Order"
+msgid "Confirm Purchase"
+msgstr "Confirmer la commande"
+
+#: templates/cart_widgets/form.html:7
+#, fuzzy
+#| msgid "My Profile"
+msgid "Update Profile"
+msgstr "Mon profil"
+
+#: templates/cart_widgets/form.html:7
+msgid "If you want to change shipping informations, click here."
+msgstr ""
+
+#: templates/cart_widgets/form.html:11
+#, fuzzy
+#| msgid "File Name"
+msgid "Full Name"
+msgstr "Nom de fichier"
+
+#: templates/cart_widgets/form.html:42
+msgid "Confirm Order"
+msgstr "Confirmer la commande"
+
+#: templates/cart_widgets/items.html:5
+msgid "ORDERS SUMMARY"
+msgstr "RÉSUMÉ DES COMMANDES"
+
+#: templates/cart_widgets/items.html:13 templates/cart_widgets/items.html:14
+#: templates/cart_widgets/items.html:34 templates/cart_widgets/items.html:38
+#: templates/history/order_detail_widgets/items.html:18
+#: templates/history/order_detail_widgets/prices.html:14
+#: templates/history/order_detail_widgets/prices.html:18
+#: templates/history/order_detail_widgets/prices.html:22
+#: templates/history/order_detail_widgets/prices.html:26
+#: templates/history/orders_list.html:40 templates/products/detail.html:94
+#: templates/products/detail.html:95 templates/products/detail.html:119
+#: templates/products/list.html:29 templates/products/list.html:30
+#: templates/store/list.html:59 templates/store/list.html:60
+msgid "DA"
+msgstr "DA"
+
+#: templates/cart_widgets/items.html:13
+msgid "Qty"
+msgstr "Qty"
+
+#: templates/cart_widgets/items.html:33
+msgid "SHIPPING"
+msgstr ""
+
+#: templates/cart_widgets/items.html:37
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: templates/cart_widgets/items.html:44
+msgid "No Items"
+msgstr "Aucun articles"
+
+#: templates/cart_widgets/items.html:45
+msgid "Check out our products"
+msgstr "Découvrez nos produits"
+
+#: templates/categories.html:20
+msgid "There are not categories"
+msgstr ""
+
+#: templates/fallback.html:5 templates/fallback.html:11
+msgid "Oops!"
+msgstr ""
+
+#: templates/fallback.html:11
+msgid "Check your internet connection"
+msgstr ""
+
+#: templates/footer.html:7
+msgid "Links"
+msgstr "Liens"
+
+#: templates/footer.html:20
+msgid "Download our app"
+msgstr "Téléchargez notre application"
+
+#: templates/footer.html:26
+msgid "Stay informed"
+msgstr "Rester informé"
+
+#: templates/footer.html:28
+msgid "Please enter your email address"
+msgstr ""
+
+#: templates/footer.html:30
+msgid "Subscribe"
+msgstr "S'abonner"
+
+#: templates/footer.html:31
+msgid ""
+"Subscribe to our newsletter to receive early discount offers, updates and "
+"new products info"
+msgstr ""
+"Abonnez-vous à notre newsletter pour recevoir des offres de réduction "
+"anticipée, des mises à jour etdes informations sur les nouveaux produits"
+
+#: templates/footer.html:36
+msgid "All Right Reserved - Elamane Communication et Contact 2021"
+msgstr "Tous droits réservés - Elamane Communication et Contact 2021"
+
+#: templates/history/delete_modal.html:8
+#, fuzzy
+#| msgid "Cancel Orders"
+msgid "Cancel Order"
+msgstr "Annuler les commandes"
+
+#: templates/history/delete_modal.html:13
+msgid "Are you sure you want to cancel the order Nº"
+msgstr ""
+
+#: templates/history/delete_modal.html:14
+msgid "You have the right to cancel the bill within 24 hours٫"
+msgstr ""
+
+#: templates/history/delete_modal.html:17
+#: templates/store/widgets/add_store.html:16
+msgid "Close"
+msgstr ""
+
+#: templates/history/delete_modal.html:18
+#: templates/store/widgets/add_store.html:17
+#, fuzzy
+#| msgid "Confirm Order"
+msgid "Confirm"
+msgstr "Confirmer la commande"
+
+#: templates/history/order_detail.html:4 templates/history/order_detail.html:21
+#: templates/history/orders_list.html:24
+msgid "N°"
+msgstr "N°"
+
+#: templates/history/order_detail.html:10 templates/history/orders_list.html:10
+#: templates/membership/edit_account.html:11
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/history/order_detail.html:14 templates/history/orders_list.html:14
+#: templates/membership/edit_account.html:15
+msgid "My Profile"
+msgstr "Mon profil"
+
+#: templates/history/order_detail.html:15 templates/history/orders_list.html:15
+#: templates/membership/edit_account.html:16 templates/page/success.html:15
+msgid "My Orders"
+msgstr "Mes commandes"
+
+#: templates/history/order_detail.html:20 templates/page/success.html:17
+msgid "Order Details"
+msgstr "détails de la commande"
+
+#: templates/history/order_detail.html:20
+msgid "Print"
+msgstr ""
+
+#: templates/history/order_detail.html:23
+msgid "Items"
+msgstr "Articles"
+
+#: templates/history/order_detail_widgets/items.html:11
+msgid "Notes"
+msgstr ""
+
+#: templates/history/order_detail_widgets/prices.html:17
+#: templates/shipping/admin_communes_list.html:15
+#: templates/shipping/admin_wilaya_list.html:15
+msgid "Shipping"
+msgstr "Livraison"
+
+#: templates/history/order_detail_widgets/prices.html:21
+#, python-format
+msgid "TVA 19%%"
+msgstr ""
+
+#: templates/history/order_detail_widgets/prices.html:25
+msgid "Total Price"
+msgstr "Prix total"
+
+#: templates/history/orders_list.html:26
+msgid "Total"
+msgstr "Total"
+
+#: templates/history/orders_list.html:28
+msgid "Actions"
+msgstr "Actions"
+
+#: templates/history/orders_list.html:43
+msgid "Display"
+msgstr "Afficher"
+
+#: templates/history/orders_list.html:46 templates/store/detail.html:41
+msgid "Delete"
+msgstr "Supprimer"
+
+#: templates/history/orders_list.html:57
+#, fuzzy
+#| msgid "There is no content to display"
+msgid "There is no orders to display"
+msgstr "Il n'y a pas de contenu à afficher"
+
+#: templates/history/orders_list.html:57
+msgid "Shop Now"
+msgstr ""
+
+#: templates/membership/edit_account.html:6 templates/store/index.html:16
+msgid "Welcome"
+msgstr "Bienvenu"
+
+#: templates/membership/edit_account.html:21
+msgid "Edit your profile"
+msgstr "Modifier votre profil"
+
+#: templates/membership/edit_account.html:23
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: templates/membership/edit_account.html:27
+#, fuzzy
+#| msgid "Update Informations"
+msgid "Shipping Informations"
+msgstr "Mettre à jour les informations"
+
+#: templates/membership/edit_account.html:31
+msgid "Update Informations"
+msgstr "Mettre à jour les informations"
+
+#: templates/navbar.html:15 templates/navbar.html:61
+msgid "Search for products"
+msgstr "Rechercher des produits"
+
+#: templates/page/content.html:16 templates/page/content.html:26
+#: templates/page/content.html:33
+msgid "There is no content to display"
+msgstr "Il n'y a pas de contenu à afficher"
+
+#: templates/page/fail.html:5 templates/page/fail.html:13
+msgid "Payment Failed"
+msgstr "Paiement échoué"
+
+#: templates/page/fail.html:14
+msgid "Error code"
+msgstr "Code d'erreur"
+
+#: templates/page/fail.html:16 templates/page/success.html:23
+msgid "The SATIM 3020 toll-free number"
+msgstr ""
+
+#: templates/page/success.html:5 templates/page/success.html:13
+msgid "Payment Success"
+msgstr "Paiement réussi"
+
+#: templates/page/success.html:14
+msgid "Your payment was successfull"
+msgstr "Votre paiement a réussi"
+
+#: templates/page/success.html:14
+msgid "You can now continue using"
+msgstr "Vous pouvez maintenant continuer à utiliser"
+
+#: templates/page/success.html:15
+msgid "Or you can visit"
+msgstr "Ou vous pouvez visiter"
+
+#: templates/page/success_table.html:7
+#, fuzzy
+#| msgid "Arabic Description"
+msgid "Description"
+msgstr "Description en arabe"
+
+#: templates/page/success_table.html:15
+#, fuzzy
+#| msgid "Phone Number"
+msgid "Order Number"
+msgstr "Numéro de téléphone"
+
+#: templates/page/success_table.html:23
+msgid "Transaction Time"
+msgstr ""
+
+#: templates/page/success_table.html:31
+#, fuzzy
+#| msgid "Payment Option"
+msgid "Payment Method"
+msgstr "Mode de paiement"
+
+#: templates/products/detail.html:89
+msgid "Num. of Orders"
+msgstr "Num. des commandes"
+
+#: templates/products/detail.html:113
+msgid "Please login to calculate paid shipping price"
+msgstr ""
+
+#: templates/products/detail.html:117 templates/products/detail.html:122
+#, fuzzy
+#| msgid "Shipping"
+msgid "Free Shipping"
+msgstr "Livraison"
+
+#: templates/products/detail.html:122 templates/products/detail.html:124
+msgid "Days"
+msgstr ""
+
+#: templates/products/detail.html:124
+#, fuzzy
+#| msgid "Shipping"
+msgid "Paid Shipping"
+msgstr "Livraison"
+
+#: templates/products/detail.html:126
+msgid "Shipping price may change in cart when you purchase multiple items"
+msgstr ""
+
+#: templates/products/detail.html:130
+msgid "Your Order Details"
+msgstr "Détails de votre commande"
+
+#: templates/products/detail.html:132
+msgid "For Example: Size XL and Color RED"
+msgstr "Par exemple: taille XL et couleur ROUGE"
+
+#: templates/products/detail.html:135
+msgid "Update Cart"
+msgstr "Mise à jour panier"
+
+#: templates/products/detail.html:137
+msgid "Add To Cart"
+msgstr "Ajouter au panier"
+
+#: templates/products/detail.html:141
+msgid "This item is not available in stock"
+msgstr ""
+
+#: templates/products/list.html:6 templates/products/list.html:13
+msgid "Products Forsale"
+msgstr "Produits à vendre"
+
+#: templates/products/list.html:32
+msgid "Available Stock"
+msgstr ""
+
+#: templates/products/list.html:49
+msgid "Details"
+msgstr "Détails"
+
+#: templates/products/list.html:60 templates/products/list.html:62
+msgid "Previous"
+msgstr "Précédente"
+
+#: templates/products/list.html:71 templates/products/list.html:73
+msgid "Next"
+msgstr "Suivante"
+
+#: templates/products/list.html:81
+#, fuzzy
+#| msgid "There is no content to display"
+msgid "There are no products to display yet"
+msgstr "Il n'y a pas de contenu à afficher"
+
+#: templates/registration/create_account.html:6
+#: templates/registration/create_account.html:13
+#: templates/registration/create_account.html:27
+msgid "Create Account"
+msgstr "Créer un compte"
+
+#: templates/registration/create_account.html:14
+msgid "If you already have an account"
+msgstr "Si vous avez déjà un compte"
+
+#: templates/registration/create_account.html:14
+msgid "Click Here"
+msgstr "Cliquez ici"
+
+#: templates/registration/create_account.html:23
+msgid "By creating this account, you agree to the"
+msgstr ""
+
+#: templates/registration/create_account.html:23
+#, fuzzy
+#| msgid "Term Of Use"
+msgid "Terms of Use"
+msgstr "Conditions d'utilisation"
+
+#: templates/registration/create_account.html:23
+msgid "and"
+msgstr ""
+
+#: templates/registration/login.html:6 templates/registration/login.html:13
+#: templates/registration/login.html:21
+msgid "Log In"
+msgstr "Connexion"
+
+#: templates/registration/login.html:14
+msgid "If you don't have an account"
+msgstr "Si vous n'avez pas de compte"
+
+#: templates/registration/login.html:14
+msgid "Create a new account"
+msgstr "Créer un nouveau compte"
+
+#: templates/shipping/admin_communes_list.html:8
+#: templates/shipping/admin_wilaya_list.html:8
+msgid "Edit"
+msgstr ""
+
+#: templates/shipping/admin_communes_list.html:27
+#: templates/shipping/admin_wilaya_list.html:25
+#, fuzzy
+#| msgid "Wilaya"
+msgid "List of Wilaya"
+msgstr "Wilaya"
+
+#: templates/shipping/admin_communes_list.html:28
+#: templates/shipping/admin_wilaya_list.html:26
+msgid "You can set initial price for each wilaya"
+msgstr ""
+
+#: templates/shipping/admin_communes_list.html:28
+#: templates/shipping/admin_wilaya_list.html:26
+msgid "also you can set price for communes"
+msgstr ""
+
+#: templates/store/detail.html:25
+msgid "Go Back"
+msgstr ""
+
+#: templates/store/detail.html:30
+msgid "Complete this form to add a product"
+msgstr ""
+
+#: templates/store/detail.html:32
+msgid "Updating product"
+msgstr ""
+
+#: templates/store/detail.html:38
+#, fuzzy
+#| msgid "Cancel Orders"
+msgid "Cancel"
+msgstr "Annuler les commandes"
+
+#: templates/store/detail.html:47
+#, fuzzy
+#| msgid "Product"
+msgid "Add Product"
+msgstr "Produit"
+
+#: templates/store/detail.html:49
+#, fuzzy
+#| msgid "Update Cart"
+msgid "Update Product"
+msgstr "Mise à jour panier"
+
+#: templates/store/index.html:4 templates/store/index.html:10
+#: templates/topbar.html:5
+#, fuzzy
+#| msgid "Store"
+msgid "My Stores"
+msgstr "Magasin"
+
+#: templates/store/index.html:17
+msgid "You can create your store and start adding products"
+msgstr ""
+
+#: templates/store/leftside_bar.html:22
+msgid "ADD A NEW STORE"
+msgstr ""
+
+#: templates/store/list.html:28
+msgid "ADD NEW PRODUCT"
+msgstr ""
+
+#: templates/store/list.html:40 templates/store/widgets/filters.html:15
+#, fuzzy
+#| msgid "Number Of Purchases"
+msgid "Purchases"
+msgstr "Nombre d'achats"
+
+#: templates/store/list.html:84
+#, fuzzy
+#| msgid "There is no content to display"
+msgid "There is no products to display"
+msgstr "Il n'y a pas de contenu à afficher"
+
+#: templates/store/widgets/add_store.html:8
+#, fuzzy
+#| msgid "Store"
+msgid "Add Store"
+msgstr "Magasin"
+
+#: templates/store/widgets/filters.html:6
+msgid "Search by name"
+msgstr ""
+
+#: templates/store/widgets/filters.html:21
+#, fuzzy
+#| msgid "Actions"
+msgid "Direction"
+msgstr "Actions"
+
+#: templates/store/widgets/filters.html:22
+msgid "Ascending"
+msgstr ""
+
+#: templates/store/widgets/filters.html:23
+msgid "Descending"
+msgstr ""
+
+#: templates/store/widgets/filters.html:29
+msgid "Clear"
+msgstr ""
+
+#: templates/topbar.html:10 templates/topbar.html:19
+msgid "Arabic"
+msgstr "Arabe"
+
+#: templates/topbar.html:12 templates/topbar.html:20
+msgid "French"
+msgstr "Français"
+
+#: templates/topbar.html:14 templates/topbar.html:21
+msgid "English"
+msgstr "Anglais"
+
+#~ msgid "Product Name"
+#~ msgstr "Nom du produit"
+
+#~ msgid "ProductImage"
+#~ msgstr "Image du produit"
+
+#~ msgid "ProductImages"
+#~ msgstr "Images du produit"
+
+#~ msgid "Images"
+#~ msgstr "Images"
+
+#~ msgid "You can set default values in 'My profile' page"
+#~ msgstr ""
+#~ "Vous pouvez définir des valeurs par défaut dans la page 'Mon profil'"
+
+#~ msgid "Something wrong happen"
+#~ msgstr "Quelque chose ne va pas"
+
+#~ msgid "Sorry for that, please try again later or"
+#~ msgstr "Désolé pour cela, veuillez réessayer plus tard ou"

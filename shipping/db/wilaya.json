@@ -1,0 +1,434 @@
+{
+    "1": {
+        "id":"1",
+        "name": "Adrar",
+        "ar_name": "أدرار",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "01000",
+        "communes": {}
+    },
+    "2": {
+        "id":"2",
+        "name": "Chlef",
+        "ar_name": "الشلف",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "02000",
+        "communes": {}
+    },
+    "3": {
+        "id":"3",
+        "name": "Laghouat",
+        "ar_name": "الأغواط",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "03000",
+        "communes": {}
+    },
+    "4": {
+        "id":"4",
+        "name": "Oum El Bouaghi",
+        "ar_name": "أم البواقي",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "04000",
+        "communes": {}
+    },
+    "5": {
+        "id":"5",
+        "name": "Batna",
+        "ar_name": "باتنة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "05000",
+        "communes": {}
+    },
+    "6": {
+        "id":"6",
+        "name": "Bejaia",
+        "ar_name": "بجاية",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "06000",
+        "communes": {}
+    },
+    "7": {
+        "id":"7",
+        "name": "Biskra",
+        "ar_name": "بسكرة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "07000",
+        "communes": {}
+    },
+    "8": {
+        "id":"8",
+        "name": "Béchar",
+        "ar_name": "بشار",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "08000",
+        "communes": {}
+    },
+    "9": {
+        "id":"9",
+        "name": "Blida",
+        "ar_name": "البليدة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "09000",
+        "communes": {}
+    },
+    "10": {
+        "id":"10",
+        "name": "Bouira",
+        "ar_name": "البويرة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "10000",
+        "communes": {}
+    },
+    "11": {
+        "id":"11",
+        "name": "Tamanrasset",
+        "ar_name": "تمنراست",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "11000",
+        "communes": {}
+    },
+    "12": {
+        "id":"12",
+        "name": "Tébessa",
+        "ar_name": "تبسة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "12000",
+        "communes": {}
+    },
+    "13": {
+        "id":"13",
+        "name": "Tlemcen",
+        "ar_name": "تلمسان",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "13000",
+        "communes": {}
+    },
+    "14": {
+        "id":"14",
+        "name": "Tiaret",
+        "ar_name": "تيارت",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "14000",
+        "communes": {}
+    },
+    "15": {
+        "id":"15",
+        "name": "Tizi Ouzou",
+        "ar_name": "تيزي وزو",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "15000",
+        "communes": {}
+    },
+    "16": {
+        "id":"16",
+        "name": "Alger",
+        "ar_name": "الجزائر",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "16000",
+        "communes": {}
+    },
+    "17": {
+        "id":"17",
+        "name": "Djelfa",
+        "ar_name": "الجلفة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "17000",
+        "communes": {}
+    },
+    "18": {
+        "id":"18",
+        "name": "Jijel",
+        "ar_name": "جيجل",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "18000",
+        "communes": {}
+    },
+    "19": {
+        "id":"19",
+        "name": "Sétif",
+        "ar_name": "سطيف",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "19000",
+        "communes": {}
+    },
+    "20": {
+        "id":"20",
+        "name": "Saïda",
+        "ar_name": "سعيدة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "20000",
+        "communes": {}
+    },
+    "21": {
+        "id":"21",
+        "name": "Skikda",
+        "ar_name": "سكيكيدة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "21000",
+        "communes": {}
+    },
+    "22": {
+        "id":"22",
+        "name": "Sidi Bel Abbes",
+        "ar_name": "سيدي بلعباس",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "22000",
+        "communes": {}
+    },
+    "23": {
+        "id":"23",
+        "name": "Annaba",
+        "ar_name": "عنابة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "23000",
+        "communes": {}
+    },
+    "24": {
+        "id":"24",
+        "name": "Guelma",
+        "ar_name": "قالمة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "24000",
+        "communes": {}
+    },
+    "25": {
+        "id":"25",
+        "name": "Constantine",
+        "ar_name": "قسنطينة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "25000",
+        "communes": {}
+    },
+    "26": {
+        "id":"26",
+        "name": "Medea",
+        "ar_name": "المدية",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "26000",
+        "communes": {}
+    },
+    "27": {
+        "id":"27",
+        "name": "Mostaganem",
+        "ar_name": "مستغانم",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "27000",
+        "communes": {}
+    },
+    "28": {
+        "id":"28",
+        "name": "M'Sila",
+        "ar_name": "المسيلة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "28000",
+        "communes": {}
+    },
+    "29": {
+        "id":"29",
+        "name": "Mascara",
+        "ar_name": "معسكر",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "29000",
+        "communes": {}
+    },
+    "30": {
+        "id":"30",
+        "name": "Ouargla",
+        "ar_name": "ورقلة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "30000",
+        "communes": {}
+    },
+    "31": {
+        "id":"31",
+        "name": "Oran",
+        "ar_name": "وهران",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "31000",
+        "communes": {}
+    },
+    "32": {
+        "id":"32",
+        "name": "El Bayadh",
+        "ar_name": "البيض",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "32000",
+        "communes": {}
+    },
+    "33": {
+        "id":"33",
+        "name": "Illizi",
+        "ar_name": "إليزي",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "33000",
+        "communes": {}
+    },
+    "34": {
+        "id":"34",
+        "name": "Bordj Bou Arreridj",
+        "ar_name": "برج بوعريريج",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "34000",
+        "communes": {}
+    },
+    "35": {
+        "id":"35",
+        "name": "Boumerdes",
+        "ar_name": "بومرداس",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "35000",
+        "communes": {}
+    },
+    "36": {
+        "id":"36",
+        "name": "El Tarf",
+        "ar_name": "الطارف",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "36000",
+        "communes": {}
+    },
+    "37": {
+        "id":"37",
+        "name": "Tindouf",
+        "ar_name": "تندوف",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "37000",
+        "communes": {}
+    },
+    "38": {
+        "id":"38",
+        "name": "Tissemsilt",
+        "ar_name": "تسمسيلت",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "38000",
+        "communes": {}
+    },
+    "39": {
+        "id":"39",
+        "name": "El Oued",
+        "ar_name": "الوادي",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "39000",
+        "communes": {}
+    },
+    "40": {
+        "id":"40",
+        "name": "Khenchela",
+        "ar_name": "خنشلة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "40000",
+        "communes": {}
+    },
+    "41": {
+        "id":"41",
+        "name": "Souk Ahras",
+        "ar_name": "سوق الأهراس",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "41000",
+        "communes": {}
+    },
+    "42": {
+        "id":"42",
+        "name": "Tipaza",
+        "ar_name": "تيبازة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "42000",
+        "communes": {}
+    },
+    "43": {
+        "id":"43",
+        "name": "Mila",
+        "ar_name": "ميلة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "43000",
+        "communes": {}
+    },
+    "44": {
+        "id":"44",
+        "name": "Aïn Defla",
+        "ar_name": "عين الدفلى",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "44000",
+        "communes": {}
+    },
+    "45": {
+        "id":"45",
+        "name": "Naama",
+        "ar_name": "النعامة",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "45000",
+        "communes": {}
+    },
+    "46": {
+        "id":"46",
+        "name": "Aïn Temouchent",
+        "ar_name": "عين تموشنت",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "46000",
+        "communes": {}
+    },
+    "47": {
+        "id":"47",
+        "name": "Ghardaia",
+        "ar_name": "غرداية",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "47000",
+        "communes": {}
+    },
+    "48": {
+        "id":"48",
+        "name": "Relizane",
+        "ar_name": "غليزان",
+        "distance_between": 0,
+        "initial_price": 0.00,
+        "postal_code": "48000",
+        "communes": {}
+    }
+}

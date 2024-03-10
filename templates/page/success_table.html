@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load centime2dinar %}
+
+<table class="table" >
+    <tbody>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Description" %}:</th>
+            <td id='action_description' style='color:green;'>{{respCode_desc}}</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Order ID" %}:</th>
+            <td id='orderId'>{{orderId}}</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Order Number" %}:</th>
+            <td id='orderNumber'>{{orderNumber}}</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Approval Code" %}:</th>
+            <td id='approvalCode'>{{approvalCode}}</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Transaction Time" %}:</th>
+            <td id='transaction_date_time'>{{transaction_date_time}}</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Deposit Amount" %}:</th>
+            <td id='depositAmount'>{{depositAmount|centime2dinar}} DA</td>
+        </tr>
+        <tr>
+            <th class="text-start" scope="row">{% trans "Payment Method" %}:</th>
+            <td id='pay_method'>{{pay_method}}</td>
+        </tr>
+    </tbody>
+</table>

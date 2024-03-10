@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{% if content.en_title %}{{content.en_title}}{% else %}Page{% endif %}{% endblock title %}
+
+{% block content %}
+    <div class="content text-center p-3" style="min-height:600px;">
+        {% if LANG_CODE == "ar" %}
+            {% if content.ar_content %}
+                {{ content.ar_content|safe }}
+            {% else %}
+                {% if content.en_content %}
+                    {{ content.en_content|safe }}
+                {% else %}
+                    <h2>{% trans "There is no content to display" %}</h2>
+                {% endif %}
+            {% endif %}
+        {% elif LANG_CODE == "fr" %}
+            {% if content.fr_content %}
+                {{ content.fr_content|safe }}
+            {% else %}
+                {% if content.en_content %}
+                    {{ content.en_content|safe }}
+                {% else %}
+                    <h2>{% trans "There is no content to display" %}</h2>
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {% if content.en_content %}
+                {{ content.en_content|safe }}
+            {% else %}
+                <h2>{% trans "There is no content to display" %}</h2>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock content %}

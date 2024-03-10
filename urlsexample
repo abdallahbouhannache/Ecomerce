@@ -1,0 +1,4 @@
+https://test.satim.dz/payment/rest/register.do?userName=SAT2108110225&password=satim120&orderNumber=5646847698655&amount=50000&currency=012&description=&language=ar&returnUrl=https://3ef6-105-110-243-45.ngrok.io/success/&failUrl=https://3ef6-105-110-243-45.ngrok.io/fail/
+
+
+https://test.satim.dz/payment/rest/register.do?userName=SAT2108110225&password=satim120&orderNumber=5646847698654&amount=50000&currency=012&returnUrl=https%3A%2F%2F3ef6-105-110-243-45.ngrok.io%2Fsuccess%2F&failUrl=https%3A%2F%2F3ef6-105-110-243-45.ngrok.io%2Ffail%2F&description=&language=ar

@@ -1,0 +1,48 @@
+{% load static i18n %}
+{% get_current_language as LANG_CODE %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} - {% trans "elamanecc" %}</title>
+    <!--sweetalert2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Import bootstrap.css-->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Import Slick-->
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+    <!--Custome CSS-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% block style %}{% endblock style %}
+</head>
+<body>
+
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+                Swal.fire({
+                    icon: '{{message.tags}}',
+                    text: '{{message}}',
+                    confirmButtonText:'<i class="fa fa-thumbs-up"></i> {% trans "Ok" %}!',
+                })
+            </script>
+        {% endfor %}
+    {% endif %}
+
+
+    {% block content %}{% endblock content %}
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="{% static 'bootstrap/jquery/jquery-3.6.0.min.js' %}" ></script>
+    <script src="{% static 'bootstrap/popper/popper.min.js' %}" ></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    {% block script %}{% endblock script %}
+</body>
+</html>

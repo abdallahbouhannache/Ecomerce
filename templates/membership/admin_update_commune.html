@@ -1,0 +1,34 @@
+<script>
+    let wilayaInput = $('#id_member-0-wilaya')
+    let oldCommuneValue = $('#id_member-0-commune').val()
+
+    let getCommunesByWilaya = (wilayaID) => {
+        // Get communes Input
+        let communesInput = $('#id_member-0-commune')
+        // Create communes template
+        let template = ''
+        $.get( `/api/v1/wilaya/${wilayaID}/`, function( data ) {
+            template = '<select name="commune" id="id_member-0-commune" class="select form-control">'
+        })
+        .done(function(response) {
+            response.data.forEach(item => template += `<option value="${item.id}">${item.name}</option>`)
+        })
+        .fail(function(error) {
+            swal.fire( "لم نتمكن من عرض البلديات الخاصة بهاذه الولاية، جرب مرة أخرى" );
+        })
+        .always(function() {
+            template += "</select>"
+            communesInput.html(template)
+            $('#id_member-0-commune').val(oldCommuneValue)
+        });
+    }
+
+    $(document).ready(function(){
+        getCommunesByWilaya(wilayaInput.val())
+    })
+
+    wilayaInput.change(() => {
+        getCommunesByWilaya(wilayaInput.val())
+    })
+</script>
+

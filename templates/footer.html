@@ -1,0 +1,45 @@
+{% load static i18n %}
+
+    <footer class="container-fluid text-center text-white bg-dark">
+
+        <div class="row">
+            <div class="col-lg-4 p-5 text-start">
+                <p><b><i class="fas fa-paperclip"></i> {% trans "Links" %}</b></p>
+                <ul>
+                    <li><a class="text-white" href="{% url 'generate_page' 'privacy-policy' %}">{% trans "Privacy Policy" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'term-of-use' %}">{% trans "Term Of Use" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'track-my-order' %}">{% trans "Track My Order" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'cancel-orders' %}">{% trans "Cancel Orders" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'return-refund' %}">{% trans "Return & Refund" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'contact-us' %}">{% trans "Contact Us" %}</a></li>
+                    <li><a class="text-white" href="{% url 'generate_page' 'about-us' %}">{% trans "About Us" %}</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 p-5 text-start">
+                {% comment %} <p><b><i class="fas fa-cloud-download-alt"></i> {% trans "Download our app" %}</b></p>
+                <img id="download-mobile" style="max-height:100px;" class="img-fluid" src="{% static 'download.png' %}" alt="App Store / Play Store"> {% endcomment %}
+                <p><b><i class="fas fa-cloud-download-alt"></i> {% trans "Payment Methods" %}</b></p>
+                <div style="padding:10px 0;width:150px;background-color:white;border-radius:20px;display:flex;justify-content:center;align-items:center;flex-direction:column;">
+                    <img alt="Algerie Poste" src="{% static 'pay_logo/algerie_poste.png' %}" style="width:50px"/>
+                    <img alt="CIB" src="{% static 'pay_logo/cib.png' %}" style="width:70px"/>
+                    <img alt="GIE" src="{% static 'pay_logo/gie.png' %}" style="width:80px"/>
+                    <img alt="SATIM" src="{% static 'pay_logo/satim.png' %}" style="width:90px"/>
+                    <p style='color:black;'>SATIM Call: 3020</p>
+                </div>
+            </div>
+            <div class="col-lg-4 p-5">
+                <form class="text-start" method="POST" action="{% url 'subscribe' %}">
+                    <input type="hidden" name="next" value="{{request.path}}">
+                    <p><b><i class="fas fa-envelope-square"></i> {% trans "Stay informed" %}</b></p>
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control" aria-label="Newsletter" placeholder="{% trans "Please enter your email address" %}" required>
+                   </div>
+                    <div class="text-end mb-1"><button type="submit" class="btn btn-danger">{% trans "Subscribe" %}</button></div>
+                    <p><small class="text-secondary">*{% trans "Subscribe to our newsletter to receive early discount offers, updates and new products info" %}.</small></p>
+                </form>
+            </div>
+        </div>
+
+        <p>{% trans "All Right Reserved - Elamane Communication et Contact 2021" %}</p>
+    </footer>

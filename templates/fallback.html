@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+
+{% block title %}{% trans "Oops!" %}{% endblock title %}
+
+{% block content %}
+    <div class="container p-2 mt-5 text-center" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <div class="payment-content p-3">
+            <i style="font-size:72px;" class="fas fa-exclamation-triangle text-danger m-2"></i>
+           <h1>{% trans "Oops!" %} {% trans "Check your internet connection" %}</h1>
+        </div>
+    </div>
+{% endblock content %}

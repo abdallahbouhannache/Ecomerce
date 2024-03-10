@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% get_current_language as LANG_CODE %}
+{% load multi_values %}
+
+{% block title %}{% trans "Products Forsale" %}{% endblock title %}
+
+{% block content %}
+
+<div class="container text-center">
+
+{% if current_page.object_list %}
+    <h2 class="section-title">{% trans "Products Forsale" %}</h2>
+
+    {% for product in current_page.object_list %}
+        <div class="card card-custom" style="width: 18rem;">
+            {% comment %} <img class="card-img-top" src="..." alt="Card image cap"> {% endcomment %}
+            <a href="{% url 'detail_product' product.slug %}"><div class="card-img" style="background-image:url('{{product.thumbnail.url}}')"></div></a>
+            <div class="card-body text-start" >
+                <div class="text-center">
+                    {% if product.store %}
+                        <small>{% trans "Store" %}: {{product.store}} {% if product.store.verified %}<i class="fas fa-check-circle text-primary"></i>{% endif %}</small>
+                    {% endif %}
+                </div>
+                <small>{{product.category}}</small>
+                <h5 class="card-title">{{product|multi_name}}</h5> 
+                <h6 class="text-primary">
+                    {% if product.prev_price %}<del class="text-danger">{{product.prev_price}} {% trans "DA" %}</del>{% endif %}
+                    {{product.sell_price}} {% trans "DA" %}
+                </h6>
+                <small>{% trans "Available Stock" %}: {{product.stock}}</small>
+                <div class="text-center p-2">
+                {% if product.rating == 5 %}
+                    <img src="{% static 'stars/5.svg' %}" alt="5 Stars">
+                {% elif product.rating == 4 %}
+                    <img src="{% static 'stars/4.svg' %}" alt="4 Stars">
+                {% elif product.rating == 3 %}
+                    <img src="{% static 'stars/3.svg' %}" alt="3 Stars">
+                {% elif product.rating == 2 %}
+                    <img src="{% static 'stars/2.svg' %}" alt="2 Stars">
+                {% elif product.rating == 1 %}
+                    <img src="{% static 'stars/1.svg' %}" alt="1 Star">
+                {% elif product.rating == 0 %}
+                    <img src="{% static 'stars/0.svg' %}" alt="0 Star">
+                {% endif %}
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="{% url 'detail_product' product.slug %}" class="btn btn-secondary btn-block">{% trans "Details" %}</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="d-flex justify-content-center text-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                {% if current_page.has_previous %}
+                <a class="page-link" href="?page={{ current_page.previous_page_number }}" aria-label="{% trans "Previous" %}">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">{% trans "Previous" %}</span>
+                </a>
+                {% endif %}
+                </li>
+                {% for products_page in products.page_range %}
+                    <li class="page-item {% if page_number == products_page %}active{% endif %}"><a class="page-link" href="?page={{products_page}}">{{products_page}}</a></li>
+                {% endfor %}
+                <li class="page-item">
+                {% if current_page.has_next %}
+                <a class="page-link" href="?page={{ current_page.next_page_number }}" aria-label="{% trans "Next" %}">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">{% trans "Next" %}</span>
+                </a>
+                {% endif %}
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% else %}
+    <h2 class="section-title">{% trans "There are no products to display yet" %}</h2>
+    <div class="display-1"><i class="fas fa-sad-tear"></i></div>
+{% endif %}
+</div>
+
+{% endblock content %}

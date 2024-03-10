@@ -1,0 +1,24 @@
+{% load static i18n %}
+{% load multi_values %}
+
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">{% trans "Product" %}</th>
+      <th scope="col">{% trans "Price" %}</th>
+      <th scope="col">{% trans "Quantity" %}</th>
+      <th scope="col">{% trans "Notes" %}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for order in order.orders.all %}
+        <tr>
+        <th scope="row">{{order.product|multi_name}}</th>
+        <td>{{order.individual_price}} {% trans "DA" %}</td>
+        <td>{{order.quantity}}</td>
+        <td>{{order.message}}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>

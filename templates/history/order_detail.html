@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Order" %} {% trans "N°" %}{{order.id}}{% endblock title %}
+
+
+{% block content %}
+
+    <div class="container text-center mt-3" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <h1 class="text-start pb-2">{% trans "Dashboard" %}</h1>
+        <div class="row">
+            <div class="col-md-4 text-start mb-5">
+                <div class="list-group">
+                    <a href="{% url 'account_display' %}" class="list-group-item list-group-item-action block">{% trans "My Profile" %}</a>
+                    <a href="{% url 'orders-list' %}" class="list-group-item list-group-item-action active">{% trans "My Orders" %}</a>
+                </div>
+            </div>
+            
+            <div class="col-md-8 border rounded text-start">
+                <h5 class="m-2">{% trans "Order Details" %} <a class="text-danger" alt="{% trans "Print" %}" href="#"><i class="fas fa-print"></i></a></h5> <hr>
+                <p><b>{% trans "N°" %}:</b> {% trans "Order" %} {{order.id}}</p>
+                <p><b>{% trans "Key" %}:</b> {{order.key}}</p>
+                <p><b>{% trans "Items" %}:</b>
+                    {% include 'history/order_detail_widgets/items.html' %}
+                    <hr>
+                </p>
+                <p><b>{% trans "Payment Option" %}:</b> {{order.get_payment_option_display}}</p>
+                <div class="text-center">
+                    {% if not order.is_paid %}
+                        {% if order.payURL %}
+                            <a class="btn btn-success mb-2" href="{{order.payURL}}"><i class="fas fa-money-bill-wave"></i> Click here to pay</a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                {% include 'history/order_detail_widgets/prices.html' %}
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'admin/custom_base.html' %}
+{% load static i18n %}
+
+
+{% block title %}{% trans "Administration" %}{% endblock title %}
+
+{% block style %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/admin/custom-style.css' %}" />
+{% endblock style %}
+
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="card card-custom" style="width: 18rem;">
+            {% comment %} <img class="card-img-top" src="..." alt="Card image cap"> {% endcomment %}
+            <a href="#"><div class="card-img" style="background-image:url('{% static 'icons/category.svg' %}')"></div></a>
+            <div class="card-body text-center" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+                <h1 class="card-title">{% trans "Category" %}</h1> 
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

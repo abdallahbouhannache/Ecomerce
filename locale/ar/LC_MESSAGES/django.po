@@ -1,0 +1,1572 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 20:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: home/abstractions.py:12
+msgid "Arabic Name"
+msgstr "الإسم بالعربي"
+
+#: home/abstractions.py:12
+msgid "Write name in Arabic"
+msgstr "أكتب الإسم بالعربي"
+
+#: home/abstractions.py:13
+msgid "French Name"
+msgstr "الإسم بالفرنسي"
+
+#: home/abstractions.py:13
+msgid "Write name in French"
+msgstr "أكتب الإسم بالفرنسي"
+
+#: home/abstractions.py:14
+msgid "English Name"
+msgstr "الإسم بالإنجليزي"
+
+#: home/abstractions.py:14
+msgid "Write name in English"
+msgstr "أكتب الإسم بالأنجليزي"
+
+#: home/abstractions.py:15 store/models.py:20
+msgid "Slug"
+msgstr "الرابط"
+
+#: home/admin.py:9 src/elamanecc.py:7
+msgid "Elamane Communication and Contact"
+msgstr "الأمان للإتصال والتواصل"
+
+#: home/admin.py:22
+msgid "Bill Total"
+msgstr "مجموع الفاتورة"
+
+#: home/admin.py:49 templates/cart_widgets/items.html:13
+#: templates/history/order_detail_widgets/items.html:9
+#: templates/history/order_detail_widgets/prices.html:13
+#: templates/store/list.html:38 templates/store/widgets/filters.html:13
+msgid "Price"
+msgstr "السعر"
+
+#: home/admin.py:50 home/models.py:70 templates/store/list.html:39
+#: templates/store/widgets/filters.html:14
+msgid "Commission"
+msgstr "العمولة"
+
+#: home/constants.py:5
+msgid "Pay Cash on Delivery"
+msgstr "الدفع عند الإستلام"
+
+#: home/constants.py:6
+msgid "Carte EDAHABIA / CIB"
+msgstr "البطاقة الذهبية / CIB"
+
+#: home/forms.py:12
+msgid "Check Captcha"
+msgstr "أنا لست روبوت"
+
+#: home/forms.py:13
+msgid "Payment Options"
+msgstr "خيارات الدفع"
+
+#: home/models.py:37
+msgid "Icon Code"
+msgstr "كود الأيقونة"
+
+#: home/models.py:40 home/models.py:56 templates/admin/reserve_index.html:20
+msgid "Category"
+msgstr "الفئة"
+
+#: home/models.py:41 templates/categories.html:7
+msgid "Categories"
+msgstr "الفئات"
+
+#: home/models.py:54
+msgid "Show"
+msgstr "عرض"
+
+#: home/models.py:54
+msgid "Hide/Display this product"
+msgstr "إخفاء/عرض المنتج"
+
+#: home/models.py:55
+msgid "Deleted"
+msgstr "محذوفة"
+
+#: home/models.py:55
+msgid "Merchant mark this item as deleted"
+msgstr "التاجر حدد هذا المنتج كمحذوف"
+
+#: home/models.py:56
+msgid "Please choose a category"
+msgstr "من فضلك إختر فئة"
+
+#: home/models.py:57 membership/models.py:12 templates/products/list.html:23
+#: templates/store/index.html:18
+msgid "Store"
+msgstr "المتجر"
+
+#: home/models.py:57
+msgid "Store who selling this product"
+msgstr "المتجر الذي يبيع هذا المنتج"
+
+#: home/models.py:58 shipping/models.py:16
+#: templates/shipping/admin_communes_list.html:5
+#: templates/shipping/admin_communes_list.html:8
+#: templates/shipping/admin_wilaya_list.html:5
+#: templates/shipping/admin_wilaya_list.html:8
+msgid "Warehouse"
+msgstr "المخزن"
+
+#: home/models.py:58
+msgid "Warehouse where this product is stored"
+msgstr "المخزن الذي يخزن فيه هذا المنتج"
+
+#: home/models.py:59
+msgid "Arabic Description"
+msgstr "تعريف بالعربي"
+
+#: home/models.py:59
+msgid "Write a description in Arabic"
+msgstr "أكتب تعريفا بالعربية"
+
+#: home/models.py:60
+msgid "French Description"
+msgstr "تعريف بالفرنسي"
+
+#: home/models.py:60
+msgid "Write a description in French"
+msgstr "أكتب تعريفا بالفرنسية"
+
+#: home/models.py:61
+msgid "English Description"
+msgstr "تعريف بالإنجليزي"
+
+#: home/models.py:61
+msgid "Write a description in English"
+msgstr "أكتب تعريفا بالإنجليزية"
+
+#: home/models.py:62
+msgid "Thumbnail"
+msgstr "الصورة المصغرة"
+
+#: home/models.py:62
+msgid "Add a thumbnail for this product"
+msgstr "أضف صورة مصغرة لهذا المنتج"
+
+#: home/models.py:63
+msgid "Image 1"
+msgstr "صورة 1"
+
+#: home/models.py:64
+msgid "Image 2"
+msgstr "صورة 2"
+
+#: home/models.py:65
+msgid "Image 3"
+msgstr "ًصورة 3"
+
+#: home/models.py:66
+msgid "Image 4"
+msgstr "ًصورة 3"
+
+#: home/models.py:67 templates/store/list.html:37
+msgid "Stock"
+msgstr "المخزن"
+
+#: home/models.py:67
+msgid "How many items you have to stock?"
+msgstr "كم منتج موجود في المخزن؟"
+
+#: home/models.py:68
+msgid "Previous Price"
+msgstr "السعر سابقا"
+
+#: home/models.py:68
+msgid "The previouse price of this product"
+msgstr "السعر السابق لهذا المنتج"
+
+#: home/models.py:69
+msgid "Current Price"
+msgstr "السعر حاليا"
+
+#: home/models.py:69
+msgid "The current price of this product"
+msgstr "السعر الحالي لهذا المنتج"
+
+#: home/models.py:70
+msgid "How much do you want our commission for each product sold?"
+msgstr "كم ترغب كعمولة عن كل عملية بيع؟"
+
+#: home/models.py:71
+msgid "Number Of Purchases"
+msgstr "عدد المشتريات"
+
+#: home/models.py:72 templates/store/list.html:41
+#: templates/store/widgets/filters.html:16
+msgid "Rating"
+msgstr "التقييم"
+
+#: home/models.py:72
+msgid "Rating from 0 to 5"
+msgstr "التقييم من 0 إلى 5"
+
+#: home/models.py:73
+msgid "Length (m)"
+msgstr "الطول (متر)"
+
+#: home/models.py:73
+msgid "Length of this product in meter"
+msgstr "طول المنتج بالمتر"
+
+#: home/models.py:74
+msgid "Width (m)"
+msgstr "العرض (متر)"
+
+#: home/models.py:74
+msgid "Width of this product in meter"
+msgstr "عرض المنتج بالمتر"
+
+#: home/models.py:75
+msgid "Height (m)"
+msgstr "الإرتفاع (متر)"
+
+#: home/models.py:75
+msgid "Height of this product in meter"
+msgstr "إرتفاع المنتج بالمتر"
+
+#: home/models.py:76
+msgid "Weight (Kg)"
+msgstr "الوزن (كغ)"
+
+#: home/models.py:76
+msgid "Weight of this product in kilogram"
+msgstr "وزن المنتج بالكيلوغرام"
+
+#: home/models.py:77
+msgid "Created at"
+msgstr "أنشئت في"
+
+#: home/models.py:80 home/models.py:109
+#: templates/history/order_detail_widgets/items.html:8
+#: templates/store/list.html:36 templates/store/widgets/filters.html:11
+msgid "Product"
+msgstr "المنتج"
+
+#: home/models.py:81
+msgid "Products"
+msgstr "المنتجات"
+
+#: home/models.py:108
+msgid "Order Date"
+msgstr "تاريخ الطلب"
+
+#: home/models.py:110 templates/history/order_detail_widgets/items.html:10
+#: templates/products/detail.html:108 templates/store/widgets/filters.html:12
+msgid "Quantity"
+msgstr "الكمية"
+
+#: home/models.py:111
+msgid "Individual Price"
+msgstr "سعر المفرد"
+
+#: home/models.py:112
+msgid "Message"
+msgstr "الرسالة"
+
+#: home/models.py:113
+msgid "Ship Date"
+msgstr "تاريخ الشحن"
+
+#: home/models.py:116 home/models.py:212 templates/history/order_detail.html:4
+#: templates/history/order_detail.html:21 templates/history/orders_list.html:36
+#: templates/store/widgets/filters.html:10
+msgid "Order"
+msgstr "الطلبية"
+
+#: home/models.py:117 home/models.py:151 templates/history/orders_list.html:4
+#: templates/products/detail.html:89
+msgid "Orders"
+msgstr "الطلبيات"
+
+#: home/models.py:140
+msgid "Waiting"
+msgstr "قيد الإنتظار"
+
+#: home/models.py:141
+msgid "Shipped"
+msgstr "تم الشحن"
+
+#: home/models.py:142
+msgid "Completed"
+msgstr "مكتملة"
+
+#: home/models.py:143
+msgid "Returned"
+msgstr "مسترجعة"
+
+#: home/models.py:144
+msgid "Canceled"
+msgstr "ملغية"
+
+#: home/models.py:145
+msgid "Refunded"
+msgstr "مسترجعة المال"
+
+#: home/models.py:147
+msgid "First Name"
+msgstr "الإسم"
+
+#: home/models.py:147
+msgid "First Name at Elamamecc"
+msgstr "الإسم في الأمان للاتصال والتواصل"
+
+#: home/models.py:148
+msgid "Last Name"
+msgstr "اللقب"
+
+#: home/models.py:148
+msgid "Last Name at Elamamecc"
+msgstr "اللقب في الأمان للاتصال والتواصل"
+
+#: home/models.py:149 templates/history/order_detail.html:22
+msgid "Key"
+msgstr "المفتاح"
+
+#: home/models.py:149
+msgid "Order ID of Elamanecc"
+msgstr "معرف الطلبية في الأمان للاتصال والتواصل"
+
+#: home/models.py:150 membership/models.py:10
+msgid "User"
+msgstr "المستخدم"
+
+#: home/models.py:152
+msgid "Products Price"
+msgstr "سعر المنتج"
+
+#: home/models.py:153 templates/cart_widgets/items.html:14
+#: templates/products/detail.html:115
+msgid "Shipping Price"
+msgstr "سعر الشحن"
+
+#: home/models.py:154 templates/history/order_detail.html:27
+#: templates/history/orders_list.html:25
+msgid "Payment Option"
+msgstr "خيار الدفع"
+
+#: home/models.py:155 templates/page/success_table.html:11
+msgid "Order ID"
+msgstr "معرف الطلبية"
+
+#: home/models.py:155
+msgid "Order Number of SATIM"
+msgstr "معرف الطلبية في ساتيم"
+
+#: home/models.py:156
+msgid "Order Status"
+msgstr "حالة الطلبية"
+
+#: home/models.py:156
+msgid "Order Status of SATIM"
+msgstr "حالة الطلبية في ساتيم"
+
+#: home/models.py:157
+msgid "Error Code"
+msgstr "كود الخطأ"
+
+#: home/models.py:157
+msgid "Error Code of SATIM"
+msgstr "كود الخطأ في ساتيم"
+
+#: home/models.py:158
+msgid "Error Message"
+msgstr "الرسالة"
+
+#: home/models.py:158
+msgid "Error Message of SATIM"
+msgstr "رسالة الخطأ في ساتيم"
+
+#: home/models.py:159
+msgid "Action Code"
+msgstr "كود الفعل"
+
+#: home/models.py:159
+msgid "Action Code of SATIM"
+msgstr "كود الفعل في ساتيم"
+
+#: home/models.py:160
+msgid "Action Code Description"
+msgstr "وصف كود الفعل"
+
+#: home/models.py:160
+msgid "Action Code Description of SATIM"
+msgstr "وصف كود الفعل في ساتيم"
+
+#: home/models.py:161
+msgid "SVFE Response"
+msgstr "رد SVFE"
+
+#: home/models.py:161
+msgid "SVFE Response of the SATIM card"
+msgstr "رد SVFE في ساتيم"
+
+#: home/models.py:162
+msgid "PAN"
+msgstr "PAN"
+
+#: home/models.py:162
+msgid "Masked number of the SATIM card"
+msgstr "رقم بطاقة الدفع مخفي"
+
+#: home/models.py:163
+msgid "Expiration"
+msgstr "إنتهاء صلاحية بطاقة الدفع"
+
+#: home/models.py:163
+msgid "Expiration date of the SATIM card"
+msgstr "تاريخ إنتهاء الصلاحية في ساتيم لبطاقة الدفع"
+
+#: home/models.py:164
+msgid "Cardholder Name"
+msgstr "إسم صاحب البطاقة"
+
+#: home/models.py:164
+msgid "Cardholder Name of SATIM client"
+msgstr "إسم صاحب البطاقة في ساتيم"
+
+#: home/models.py:165
+msgid "Amount"
+msgstr "المبلغ"
+
+#: home/models.py:165
+msgid "Amount should paid in centime with SATIM"
+msgstr "المبلغ يجب أن يكون بالسنتيم في ساتيم"
+
+#: home/models.py:166 templates/page/success_table.html:27
+msgid "Deposit Amount"
+msgstr "المبلغ المدفوع"
+
+#: home/models.py:166
+msgid "Paid Amount in centime with SATIM"
+msgstr "المبلغ المدفوع بالسنتيم في ساتيم"
+
+#: home/models.py:167
+msgid "Currency Code"
+msgstr "كود العملة"
+
+#: home/models.py:167
+msgid "Currency Code ISO4217"
+msgstr "كود العملة ISO4217"
+
+#: home/models.py:168 templates/page/success_table.html:19
+msgid "Approval Code"
+msgstr "كود الموافقة"
+
+#: home/models.py:168
+msgid "Approval Code of SATIM"
+msgstr "كود الموافقة في ساتيم"
+
+#: home/models.py:169
+msgid "Auth Code"
+msgstr "كود التعريف"
+
+#: home/models.py:169
+msgid "Auth Code of SATIM should always be 2"
+msgstr "كود التعريف في ساتيم يجب أن يكون دائما 2"
+
+#: home/models.py:170
+msgid "IP"
+msgstr "IP"
+
+#: home/models.py:170
+msgid "Address IP of SATIM client"
+msgstr "IP في ساتيم"
+
+#: home/models.py:171
+msgid "Payment URL"
+msgstr "رابط الدفع"
+
+#: home/models.py:172 home/models.py:173
+msgid "Client ID"
+msgstr "معرف الزبون"
+
+#: home/models.py:172
+msgid "Client ID of SATIM"
+msgstr "معرف الزبون في ساتيم"
+
+#: home/models.py:173
+msgid "Binding ID of SATIM"
+msgstr "معرف ملزم في ساتيم"
+
+#: home/models.py:174
+msgid "Is Paid ?"
+msgstr "فاتورة مدفوعة ؟"
+
+#: home/models.py:175
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+#: home/models.py:176
+msgid "Auto Delete Date"
+msgstr "تاريخ الحذف"
+
+#: home/models.py:176
+msgid "Time after deleting this bill of not paid"
+msgstr "التاريخ الأقصى لعملية حذف الفاتورة"
+
+#: home/models.py:177 templates/history/order_detail_widgets/prices.html:9
+#: templates/history/orders_list.html:27
+msgid "Status"
+msgstr "الحالة"
+
+#: home/models.py:177
+msgid "Status of Elamanecc"
+msgstr "حالة الأمان للإتصال والتواصل"
+
+#: home/models.py:178
+msgid "Params"
+msgstr "المعطيات"
+
+#: home/models.py:178
+msgid "Params of SATIM client"
+msgstr "المعطيات في ساتيم"
+
+#: home/models.py:181
+msgid "Bill"
+msgstr "الفاتورة"
+
+#: home/models.py:182
+msgid "Bills"
+msgstr "الفواتير"
+
+#: home/models.py:196 templates/membership/edit_account.html:24
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: home/models.py:197
+msgid "Unsubscribe Code"
+msgstr "كود إلغاء الإشتراك"
+
+#: home/models.py:200
+msgid "Subscriber"
+msgstr "المشترك"
+
+#: home/models.py:201
+msgid "Subscribers"
+msgstr "المشتركين"
+
+#: home/models.py:210
+msgid "Name"
+msgstr "الإسم"
+
+#: home/models.py:211
+msgid "Image"
+msgstr "الصورة"
+
+#: home/models.py:213
+msgid "Hide"
+msgstr "إخفاء"
+
+#: home/models.py:216 home/models.py:217
+msgid "Carousel"
+msgstr "الإعلانات"
+
+#: home/payments.py:71
+msgid "Order ID is required"
+msgstr "معرف الطلبية ضروري"
+
+#: home/payments.py:72
+msgid "You are not allowed to access here."
+msgstr "لا يسمح لك بالدخول هنا."
+
+#: home/views/cart.py:86
+msgid "There are no items in your cart, please choose items first"
+msgstr "لا توجد منتجات في السلة، قم بالتسوق أولا من فضلك"
+
+#: home/views/cart.py:120
+msgid ""
+"The quantity you wish to purchase for {} is greater than the quantity in "
+"stock"
+msgstr ""
+"الكمية التي ترغب بشرائها لـ {} أكبر من الكمية في "
+"المخزن"
+
+#: home/views/cart.py:145
+msgid "Please choose the products you wish to purchase first"
+msgstr "من فضلك قم باختيار المنتج الذي ترغب في شراءه أولا"
+
+#: home/views/cart.py:210
+msgid "Bill has been created, you can track your order in My Orders page"
+msgstr "تم إنشاء الفاتورة، يمكنك متباعة طلبيتك في صفحة 'طلبياتي' الآن"
+
+#: home/views/email.py:26
+msgid "Please fix these errors:"
+msgstr "من فضلك أصلح الأخطاء التالية:"
+
+#: home/views/email.py:37
+#, python-brace-format
+msgid "{email} has been subscribed to our newsletter"
+msgstr "{email} قام بالإشتراك في خدمة التنبيهات"
+
+#: home/views/email.py:39
+msgid "{email} already subscribed to our newsletter"
+msgstr "{email} قام بالإشتراك في خدمة التنبيهات"
+
+#: home/views/order.py:86
+msgid ""
+"The order Nº{} has been canceled, you will be refunded if you paid using CIB"
+msgstr "الطلبية رقم {} تم إلغائها، سيتم إسترداد المبلغ المدفوع إذا كنت قد قمت بالدفع عبر بطاقة دفع إلكتروني"
+
+#: home/views/order.py:88
+msgid "The order Nº{} can not canceled, please contact support"
+msgstr "الطلبية {} لا يمكن إلغائها، من فضلك راسل الدعم"
+
+#: home/views/products.py:82
+msgid "The quantity you wish to purchase is greater than the quantity in stock"
+msgstr "الكمية التي ترغب بشرائها أكبر من الموجودة في المخزن"
+
+#: home/views/products.py:87
+msgid "Item has been added to cart"
+msgstr "تم إضافة المنتج للسلة"
+
+#: membership/abstractions.py:9 membership/forms.py:11
+#: templates/cart_widgets/form.html:17
+#: templates/membership/edit_account.html:25
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: membership/abstractions.py:10 membership/forms.py:12 shipping/models.py:13
+#: templates/cart_widgets/form.html:23
+msgid "Address"
+msgstr "العنوان"
+
+#: membership/abstractions.py:11 membership/forms.py:13
+msgid "Wilaya"
+msgstr "الولاية"
+
+#: membership/abstractions.py:12 membership/forms.py:14
+msgid "Commune"
+msgstr "البلدية"
+
+#: membership/abstractions.py:13 membership/forms.py:16
+msgid "Zip Code"
+msgstr "الترميز البريدي"
+
+#: membership/constants.py:4
+msgid "Adrar"
+msgstr ""
+
+#: membership/constants.py:5
+msgid "Chlef"
+msgstr ""
+
+#: membership/constants.py:6
+msgid "Laghouat"
+msgstr ""
+
+#: membership/constants.py:7
+msgid "Oum El Bouaghi"
+msgstr ""
+
+#: membership/constants.py:8
+msgid "Batna"
+msgstr ""
+
+#: membership/constants.py:9
+msgid "Bejaia"
+msgstr ""
+
+#: membership/constants.py:10
+msgid "Biskra"
+msgstr ""
+
+#: membership/constants.py:11
+msgid "Béchar"
+msgstr ""
+
+#: membership/constants.py:12
+msgid "Blida"
+msgstr ""
+
+#: membership/constants.py:13
+msgid "Bouira"
+msgstr ""
+
+#: membership/constants.py:14
+msgid "Tamanrasset"
+msgstr ""
+
+#: membership/constants.py:15
+msgid "Tébessa"
+msgstr ""
+
+#: membership/constants.py:16
+msgid "Tlemcen"
+msgstr ""
+
+#: membership/constants.py:17
+msgid "Tiaret"
+msgstr ""
+
+#: membership/constants.py:18
+msgid "Tizi Ouzou"
+msgstr ""
+
+#: membership/constants.py:19
+msgid "Alger"
+msgstr ""
+
+#: membership/constants.py:20
+msgid "Djelfa"
+msgstr ""
+
+#: membership/constants.py:21
+msgid "Jijel"
+msgstr ""
+
+#: membership/constants.py:22
+msgid "Sétif"
+msgstr ""
+
+#: membership/constants.py:23
+msgid "Saïda"
+msgstr ""
+
+#: membership/constants.py:24
+msgid "Skikda"
+msgstr ""
+
+#: membership/constants.py:25
+msgid "Sidi Bel Abbes"
+msgstr ""
+
+#: membership/constants.py:26
+msgid "Annaba"
+msgstr ""
+
+#: membership/constants.py:27
+msgid "Guelma"
+msgstr ""
+
+#: membership/constants.py:28
+msgid "Constantine"
+msgstr ""
+
+#: membership/constants.py:29
+msgid "Medea"
+msgstr ""
+
+#: membership/constants.py:30
+msgid "Mostaganem"
+msgstr ""
+
+#: membership/constants.py:31
+msgid "M'Sila"
+msgstr ""
+
+#: membership/constants.py:32
+msgid "Mascara"
+msgstr ""
+
+#: membership/constants.py:33
+msgid "Ouargla"
+msgstr ""
+
+#: membership/constants.py:34
+msgid "Oran"
+msgstr ""
+
+#: membership/constants.py:35
+msgid "El Bayadh"
+msgstr ""
+
+#: membership/constants.py:36
+msgid "Illizi"
+msgstr ""
+
+#: membership/constants.py:37
+msgid "Bordj Bou Arreridj"
+msgstr ""
+
+#: membership/constants.py:38
+msgid "Boumerdes"
+msgstr ""
+
+#: membership/constants.py:39
+msgid "El Tarf"
+msgstr ""
+
+#: membership/constants.py:40
+msgid "Tindouf"
+msgstr ""
+
+#: membership/constants.py:41
+msgid "Tissemsilt"
+msgstr ""
+
+#: membership/constants.py:42
+msgid "El Oued"
+msgstr ""
+
+#: membership/constants.py:43
+msgid "Khenchela"
+msgstr ""
+
+#: membership/constants.py:44
+msgid "Souk Ahras"
+msgstr ""
+
+#: membership/constants.py:45
+msgid "Tipaza"
+msgstr ""
+
+#: membership/constants.py:46
+msgid "Mila"
+msgstr ""
+
+#: membership/constants.py:47
+msgid "Aïn Defla"
+msgstr ""
+
+#: membership/constants.py:48
+msgid "Naama"
+msgstr ""
+
+#: membership/constants.py:49
+msgid "Aïn Temouchent"
+msgstr ""
+
+#: membership/constants.py:50
+msgid "Ghardaia"
+msgstr ""
+
+#: membership/constants.py:51
+msgid "Relizane"
+msgstr ""
+
+#: membership/forms.py:11
+msgid "For example: 0770605062 or +213770209494"
+msgstr "مثال: 0770605062 أو +213770209494"
+
+#: membership/forms.py:12
+msgid "For example: 123 Cité Les Arbres"
+msgstr "مثلا: 123 شارع الأشجار"
+
+#: membership/forms.py:13
+msgid "Wilaya example: Constantine"
+msgstr "مثال عن الولاية: قسنطينة"
+
+#: membership/forms.py:14
+msgid "Commune example: Béni Hamidane"
+msgstr "مثال عن البلدية: بني حميدان"
+
+#: membership/forms.py:18
+msgid "Zip Code example: 25220"
+msgstr "مثال عن الترميز البريدي: 25220"
+
+#: membership/forms.py:32
+msgid "Email is already taken by another user."
+msgstr "هذا البريد الإلكتروني مستعمل من طرف مستخدم آخر."
+
+#: membership/models.py:11
+msgid "Merchant"
+msgstr "التاجر"
+
+#: membership/models.py:15
+msgid "Member"
+msgstr "العضو"
+
+#: membership/models.py:16
+msgid "Members"
+msgstr "الأعضاء"
+
+#: membership/views/account.py:59
+msgid "Your account informations has been updated"
+msgstr "تم تحديث معلوماتك الشخصية بنجاح"
+
+#: membership/views/authentication.py:56
+msgid "Your account has been created"
+msgstr "تم إنشاء حسابك بنجاح"
+
+#: page/abstractions.py:9
+msgid "English Title"
+msgstr "العنوان بالإنجليزي"
+
+#: page/abstractions.py:10
+msgid "French Title"
+msgstr "العنوان بالفرنسي"
+
+#: page/abstractions.py:11
+msgid "Arabic Title"
+msgstr "العنوان بالعربي"
+
+#: page/abstractions.py:12
+msgid "English Content"
+msgstr "المحتوى بالإنجليزي"
+
+#: page/abstractions.py:13
+msgid "French Content"
+msgstr "المحتوى بالفرنسي"
+
+#: page/abstractions.py:14
+msgid "Arabic Content"
+msgstr "المحتوى بالعربي"
+
+#: page/admin.py:30 page/models.py:12 page/models.py:13 templates/footer.html:9
+#: templates/registration/create_account.html:23
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+#: page/admin.py:45 page/models.py:22 page/models.py:23
+#: templates/footer.html:10
+msgid "Term Of Use"
+msgstr "شروط الإستخدام"
+
+#: page/admin.py:60 templates/footer.html:11
+msgid "Track My Order"
+msgstr "متابعة طلبياتي"
+
+#: page/admin.py:74 page/models.py:42 page/models.py:43
+#: templates/footer.html:12
+msgid "Cancel Orders"
+msgstr "إلغاء الطلبيات"
+
+#: page/admin.py:89 page/models.py:52 page/models.py:53
+#: templates/footer.html:13
+msgid "Return & Refund"
+msgstr "الإسترجاع والإسترداد"
+
+#: page/admin.py:104 page/models.py:62 page/models.py:63
+#: templates/footer.html:15
+msgid "About Us"
+msgstr "من نحن"
+
+#: page/admin.py:119 page/models.py:72 page/models.py:73
+#: templates/footer.html:14
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#: page/models.py:32 page/models.py:33
+msgid "Track Orders"
+msgstr "متابعة الطلبيات"
+
+#: shipping/models.py:12
+msgid "Warehouse Name"
+msgstr "المخزن"
+
+#: shipping/models.py:17 templates/shipping/admin_communes_list.html:17
+#: templates/shipping/admin_wilaya_list.html:17
+msgid "Warehouses"
+msgstr "المخازن"
+
+#: shipping/views/administration.py:42 shipping/views/administration.py:73
+msgid "You have updated wilaya settings successfuly"
+msgstr "تم قبول عملية الدفع بنجاح"
+
+#: src/elamanecc.py:8
+msgid "e-commerce"
+msgstr "تجارة إلكترونية"
+
+#: src/elamanecc.py:9
+msgid "Cité Thenia Mila 43000"
+msgstr "حي الثنية ميلة 43000"
+
+#: store/models.py:16
+msgid "Store Owner"
+msgstr "صاحب المتجر"
+
+#: store/models.py:17
+msgid "First name"
+msgstr "الإسم"
+
+#: store/models.py:18
+msgid "Last name"
+msgstr "اللقب"
+
+#: store/models.py:19
+msgid "Store Name"
+msgstr "إسم المتجر"
+
+#: store/models.py:21
+msgid "Logo"
+msgstr "الشعار"
+
+#: store/models.py:22
+msgid "NIF"
+msgstr "رقم التعريف الجبائي"
+
+#: store/models.py:23
+msgid "Register Commerce"
+msgstr "السجل التجاري"
+
+#: store/models.py:24
+msgid "Active"
+msgstr "مفعل"
+
+#: store/models.py:25
+msgid "Verified"
+msgstr "حساب مؤكد"
+
+#: store/models.py:26
+msgid "Bank Name"
+msgstr "إسم البنك"
+
+#: store/models.py:27
+msgid "Bank RIP"
+msgstr "RIP البنك"
+
+#: store/models.py:30
+msgid "store"
+msgstr "المتجر"
+
+#: store/models.py:31
+msgid "stores"
+msgstr "المتاجر"
+
+#: store/views/user_store.py:39
+msgid "Store has been created, we will review your request within 72 hours"
+msgstr "تم إنشاء المتجر، سيتم مراجعته في ظرف 72 ساعة"
+
+#: store/views/user_store.py:189
+msgid "Product has been disabled"
+msgstr "تم تعطيل المنتج"
+
+#: templates/admin/custom_base.html:9 templates/base.html:9
+msgid "elamanecc"
+msgstr "الأمان للإتصال والتواصل"
+
+#: templates/admin/custom_base.html:31 templates/base.html:42
+msgid "Ok"
+msgstr "حسنا"
+
+#: templates/admin/reserve_index.html:5 templates/topbar.html:4
+msgid "Administration"
+msgstr "الإدارة"
+
+#: templates/cart.html:7 templates/cart.html:14 templates/cart.html:18
+msgid "Cart"
+msgstr "السلة"
+
+#: templates/cart.html:7
+msgid "items"
+msgstr "المنتجات"
+
+#: templates/cart.html:13 templates/products/detail.html:13
+#: templates/shipping/admin_communes_list.html:13
+#: templates/shipping/admin_wilaya_list.html:13
+msgid "Home"
+msgstr "الرئيسية"
+
+#: templates/cart_widgets/form.html:6
+msgid "Confirm Purchase"
+msgstr "تأكيد الشراء"
+
+#: templates/cart_widgets/form.html:7
+msgid "Update Profile"
+msgstr "تحديث البروفايل"
+
+#: templates/cart_widgets/form.html:7
+msgid "If you want to change shipping informations, click here."
+msgstr "إذا كانت ترغب بتحديث معلومات الشحن، إضغط هنا"
+
+#: templates/cart_widgets/form.html:11
+msgid "Full Name"
+msgstr "إسم الملف"
+
+#: templates/cart_widgets/form.html:42
+msgid "Confirm Order"
+msgstr "تأكيد الطلبية"
+
+#: templates/cart_widgets/items.html:5
+msgid "ORDERS SUMMARY"
+msgstr "ملخص الطلبية"
+
+#: templates/cart_widgets/items.html:13 templates/cart_widgets/items.html:14
+#: templates/cart_widgets/items.html:34 templates/cart_widgets/items.html:38
+#: templates/history/order_detail_widgets/items.html:18
+#: templates/history/order_detail_widgets/prices.html:14
+#: templates/history/order_detail_widgets/prices.html:18
+#: templates/history/order_detail_widgets/prices.html:22
+#: templates/history/order_detail_widgets/prices.html:26
+#: templates/history/orders_list.html:40 templates/products/detail.html:94
+#: templates/products/detail.html:95 templates/products/detail.html:119
+#: templates/products/list.html:29 templates/products/list.html:30
+#: templates/store/list.html:59 templates/store/list.html:60
+msgid "DA"
+msgstr "د.ج"
+
+#: templates/cart_widgets/items.html:13
+msgid "Qty"
+msgstr "الكمية"
+
+#: templates/cart_widgets/items.html:33
+msgid "SHIPPING"
+msgstr "الشحن"
+
+#: templates/cart_widgets/items.html:37
+msgid "TOTAL"
+msgstr "المجموع"
+
+#: templates/cart_widgets/items.html:44
+msgid "No Items"
+msgstr "لا توجد منتجات"
+
+#: templates/cart_widgets/items.html:45
+msgid "Check out our products"
+msgstr "إبحث عن منتجات"
+
+#: templates/categories.html:20
+msgid "There are not categories"
+msgstr "لا توجد فئات"
+
+#: templates/fallback.html:5 templates/fallback.html:11
+msgid "Oops!"
+msgstr "أوبس!"
+
+#: templates/fallback.html:11
+msgid "Check your internet connection"
+msgstr "تحقق من إتصالك بالانترنت"
+
+#: templates/footer.html:7
+msgid "Links"
+msgstr "روابط مهمة"
+
+#: templates/footer.html:20
+msgid "Download our app"
+msgstr "حمل تطبيقنا"
+
+#: templates/footer.html:26
+msgid "Stay informed"
+msgstr "إبقى على إطلاع"
+
+#: templates/footer.html:28
+msgid "Please enter your email address"
+msgstr "من فضلك أدخل بريد إلكتروني"
+
+#: templates/footer.html:30
+msgid "Subscribe"
+msgstr "إشترك"
+
+#: templates/footer.html:31
+msgid ""
+"Subscribe to our newsletter to receive early discount offers, updates and "
+"new products info"
+msgstr ""
+"إشترك في خدمة الرسائل واستقبل آخر العروض والتخفيضات و المعلومات عن منتجاتنا "
+"الجديدة"
+
+#: templates/footer.html:36
+msgid "All Right Reserved - Elamane Communication et Contact 2021"
+msgstr "جميع الحقوق محفوظة - الأمان للإتصال والتواصل 2021"
+
+#: templates/history/delete_modal.html:8
+msgid "Cancel Order"
+msgstr "إلغاء الطلبية"
+
+#: templates/history/delete_modal.html:13
+msgid "Are you sure you want to cancel the order Nº"
+msgstr "هل أنت متأكد من رغبتك بحذف الطلبية رقم"
+
+#: templates/history/delete_modal.html:14
+msgid "You have the right to cancel the bill within 24 hours٫"
+msgstr "لديك الحق في إلغاء الطلبية في ظرف 24 ساعة"
+
+#: templates/history/delete_modal.html:17
+#: templates/store/widgets/add_store.html:16
+msgid "Close"
+msgstr "إغلاق"
+
+#: templates/history/delete_modal.html:18
+#: templates/store/widgets/add_store.html:17
+msgid "Confirm"
+msgstr "تأكيد"
+
+#: templates/history/order_detail.html:4 templates/history/order_detail.html:21
+#: templates/history/orders_list.html:24
+msgid "N°"
+msgstr "ترقيم"
+
+#: templates/history/order_detail.html:10 templates/history/orders_list.html:10
+#: templates/membership/edit_account.html:11
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: templates/history/order_detail.html:14 templates/history/orders_list.html:14
+#: templates/membership/edit_account.html:15
+msgid "My Profile"
+msgstr "معلوماتي الشخصية"
+
+#: templates/history/order_detail.html:15 templates/history/orders_list.html:15
+#: templates/membership/edit_account.html:16 templates/page/success.html:15
+msgid "My Orders"
+msgstr "طلبياتي"
+
+#: templates/history/order_detail.html:20 templates/page/success.html:17
+msgid "Order Details"
+msgstr "معلومات الطلبية"
+
+#: templates/history/order_detail.html:20
+msgid "Print"
+msgstr "طباعة"
+
+#: templates/history/order_detail.html:23
+msgid "Items"
+msgstr "المنتجات"
+
+#: templates/history/order_detail_widgets/items.html:11
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: templates/history/order_detail_widgets/prices.html:17
+#: templates/shipping/admin_communes_list.html:15
+#: templates/shipping/admin_wilaya_list.html:15
+msgid "Shipping"
+msgstr "الشحن"
+
+#: templates/history/order_detail_widgets/prices.html:21
+#, python-format
+msgid "TVA 19%%"
+msgstr "ض.ق.م 19 بالمائة"
+
+#: templates/history/order_detail_widgets/prices.html:25
+msgid "Total Price"
+msgstr "السعر الإجمالي"
+
+#: templates/history/orders_list.html:26
+msgid "Total"
+msgstr "المجموع"
+
+#: templates/history/orders_list.html:28
+msgid "Actions"
+msgstr "تصرفات"
+
+#: templates/history/orders_list.html:43
+msgid "Display"
+msgstr "معاينة"
+
+#: templates/history/orders_list.html:46 templates/store/detail.html:41
+msgid "Delete"
+msgstr "حذف"
+
+#: templates/history/orders_list.html:57
+msgid "There is no orders to display"
+msgstr "لا توجد طلبيات لإظهارها"
+
+#: templates/history/orders_list.html:57
+msgid "Shop Now"
+msgstr "تسوق الآن"
+
+#: templates/membership/edit_account.html:6 templates/store/index.html:16
+msgid "Welcome"
+msgstr "مرحبا"
+
+#: templates/membership/edit_account.html:21
+msgid "Edit your profile"
+msgstr "تحديث معلوماتي الشخصية"
+
+#: templates/membership/edit_account.html:23
+msgid "Username"
+msgstr "إسم المستخدم"
+
+#: templates/membership/edit_account.html:27
+msgid "Shipping Informations"
+msgstr "معلومات الشحن"
+
+#: templates/membership/edit_account.html:31
+msgid "Update Informations"
+msgstr "تحديث المعلومات"
+
+#: templates/navbar.html:15 templates/navbar.html:61
+msgid "Search for products"
+msgstr "إبحث عن منتجات"
+
+#: templates/page/content.html:16 templates/page/content.html:26
+#: templates/page/content.html:33
+msgid "There is no content to display"
+msgstr "لا يوجد محتوى لإظهاره"
+
+#: templates/page/fail.html:5 templates/page/fail.html:13
+msgid "Payment Failed"
+msgstr "خطأ في عملية الدفع"
+
+#: templates/page/fail.html:14
+msgid "Error code"
+msgstr "كود الخطأ"
+
+#: templates/page/fail.html:16 templates/page/success.html:23
+msgid "The SATIM 3020 toll-free number"
+msgstr "الرقم المجاني لساتيم 3020"
+
+#: templates/page/success.html:5 templates/page/success.html:13
+msgid "Payment Success"
+msgstr "تم الدفع بنجاح"
+
+#: templates/page/success.html:14
+msgid "Your payment was successfull"
+msgstr "تم قبول عملية الدفع بنجاح"
+
+#: templates/page/success.html:14
+msgid "You can now continue using"
+msgstr "يمكنك الآن متابعة إستخدام موقع"
+
+#: templates/page/success.html:15
+msgid "Or you can visit"
+msgstr "أو يمكنك زيارة"
+
+#: templates/page/success_table.html:7
+msgid "Description"
+msgstr "الوصف"
+
+#: templates/page/success_table.html:15
+msgid "Order Number"
+msgstr "رقم الطلبية"
+
+#: templates/page/success_table.html:23
+msgid "Transaction Time"
+msgstr "تاريخ التحويل"
+
+#: templates/page/success_table.html:31
+msgid "Payment Method"
+msgstr "خيار الدفع"
+
+#: templates/products/detail.html:89
+msgid "Num. of Orders"
+msgstr "عدد الطلبيات"
+
+#: templates/products/detail.html:113
+msgid "Please login to calculate paid shipping price"
+msgstr "من فضلك قم بتسجيل الدخول ليتم حساب سعر الشحن"
+
+#: templates/products/detail.html:117 templates/products/detail.html:122
+msgid "Free Shipping"
+msgstr "شحن مجاني"
+
+#: templates/products/detail.html:122 templates/products/detail.html:124
+msgid "Days"
+msgstr "الأيام"
+
+#: templates/products/detail.html:124
+msgid "Paid Shipping"
+msgstr "شحن مدفوع"
+
+#: templates/products/detail.html:126
+msgid "Shipping price may change in cart when you purchase multiple items"
+msgstr "سعر الشحن قد يتغير عند شراء عدة منتجات مع بعض"
+
+#: templates/products/detail.html:130
+msgid "Your Order Details"
+msgstr "معلومات طلبيتك"
+
+#: templates/products/detail.html:132
+msgid "For Example: Size XL and Color RED"
+msgstr "مثال: الحجم XL واللون أحمر"
+
+#: templates/products/detail.html:135
+msgid "Update Cart"
+msgstr "تحديث السلة"
+
+#: templates/products/detail.html:137
+msgid "Add To Cart"
+msgstr "أضف إلى السلة"
+
+#: templates/products/detail.html:141
+msgid "This item is not available in stock"
+msgstr "هذا المنتج غير متوفر في المخزن"
+
+#: templates/products/list.html:6 templates/products/list.html:13
+msgid "Products Forsale"
+msgstr "منتجات للبيع"
+
+#: templates/products/list.html:32
+msgid "Available Stock"
+msgstr "المخزون المتوفر"
+
+#: templates/products/list.html:49
+msgid "Details"
+msgstr "معلومات أكثر"
+
+#: templates/products/list.html:60 templates/products/list.html:62
+msgid "Previous"
+msgstr "السابق"
+
+#: templates/products/list.html:71 templates/products/list.html:73
+msgid "Next"
+msgstr "التالي"
+
+#: templates/products/list.html:81
+msgid "There are no products to display yet"
+msgstr "لا توجد منتجات لعرضها حتى الآن"
+
+#: templates/registration/create_account.html:6
+#: templates/registration/create_account.html:13
+#: templates/registration/create_account.html:27
+msgid "Create Account"
+msgstr "أنشئ عضوية"
+
+#: templates/registration/create_account.html:14
+msgid "If you already have an account"
+msgstr "إذا كنت تمتلك عضوية"
+
+#: templates/registration/create_account.html:14
+msgid "Click Here"
+msgstr "إضغط هنا"
+
+#: templates/registration/create_account.html:23
+msgid "By creating this account, you agree to the"
+msgstr "بإنشائك لهذا الحساب، أنت توافق على"
+
+#: templates/registration/create_account.html:23
+msgid "Terms of Use"
+msgstr "شروط الإستخدام"
+
+#: templates/registration/create_account.html:23
+msgid "and"
+msgstr "و"
+
+#: templates/registration/login.html:6 templates/registration/login.html:13
+#: templates/registration/login.html:21
+msgid "Log In"
+msgstr "تسجيل الدخول"
+
+#: templates/registration/login.html:14
+msgid "If you don't have an account"
+msgstr "إذا لم تكن لديك عضوية"
+
+#: templates/registration/login.html:14
+msgid "Create a new account"
+msgstr "أنشئ عضوية جديدة"
+
+#: templates/shipping/admin_communes_list.html:8
+#: templates/shipping/admin_wilaya_list.html:8
+msgid "Edit"
+msgstr "تعديل"
+
+#: templates/shipping/admin_communes_list.html:27
+#: templates/shipping/admin_wilaya_list.html:25
+msgid "List of Wilaya"
+msgstr "قائمة الولايات"
+
+#: templates/shipping/admin_communes_list.html:28
+#: templates/shipping/admin_wilaya_list.html:26
+msgid "You can set initial price for each wilaya"
+msgstr "يمكنك وضع سعر إبتدائي لكل ولاية"
+
+#: templates/shipping/admin_communes_list.html:28
+#: templates/shipping/admin_wilaya_list.html:26
+msgid "also you can set price for communes"
+msgstr "أيضا يمكنك وضع السعر الإبتدائي للبلديات"
+
+#: templates/store/detail.html:25
+msgid "Go Back"
+msgstr "رجوع"
+
+#: templates/store/detail.html:30
+msgid "Complete this form to add a product"
+msgstr "إملئ هذه الإستمارة لإضافة منتج"
+
+#: templates/store/detail.html:32
+msgid "Updating product"
+msgstr "تعديل المنتج"
+
+#: templates/store/detail.html:38
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: templates/store/detail.html:47
+msgid "Add Product"
+msgstr "أشف منتج"
+
+#: templates/store/detail.html:49
+msgid "Update Product"
+msgstr "تحديث المنتج"
+
+#: templates/store/index.html:4 templates/store/index.html:10
+#: templates/topbar.html:5
+msgid "My Stores"
+msgstr "متاجري"
+
+#: templates/store/index.html:17
+msgid "You can create your store and start adding products"
+msgstr "يمكنك إنشاء متجرك والبدأ في إضافة المنتجات"
+
+#: templates/store/leftside_bar.html:22
+msgid "ADD A NEW STORE"
+msgstr "إضافة متجر جديد"
+
+#: templates/store/list.html:28
+msgid "ADD NEW PRODUCT"
+msgstr "إضافة منتج جديد"
+
+#: templates/store/list.html:40 templates/store/widgets/filters.html:15
+msgid "Purchases"
+msgstr "المشتريات"
+
+#: templates/store/list.html:84
+msgid "There is no products to display"
+msgstr "لا توجد منتجات لإظهارها"
+
+#: templates/store/widgets/add_store.html:8
+msgid "Add Store"
+msgstr "أضف متجر"
+
+#: templates/store/widgets/filters.html:6
+msgid "Search by name"
+msgstr "بحث بالإسم"
+
+#: templates/store/widgets/filters.html:21
+msgid "Direction"
+msgstr "الإتجاه"
+
+#: templates/store/widgets/filters.html:22
+msgid "Ascending"
+msgstr "تصاعديا"
+
+#: templates/store/widgets/filters.html:23
+msgid "Descending"
+msgstr "تنازليا"
+
+#: templates/store/widgets/filters.html:29
+msgid "Clear"
+msgstr "مسح"
+
+#: templates/topbar.html:10 templates/topbar.html:19
+msgid "Arabic"
+msgstr "العربية"
+
+#: templates/topbar.html:12 templates/topbar.html:20
+msgid "French"
+msgstr "الفرنسية"
+
+#: templates/topbar.html:14 templates/topbar.html:21
+msgid "English"
+msgstr "الإنجليزية"
+
+#~ msgid "You can set default values in 'My profile' page"
+#~ msgstr "يمكنك حفظ المعلومات من خلال صفحة 'معلوماتي الشخصية' الآن"
+
+#~ msgid "Something wrong happen"
+#~ msgstr "حدث خطأ"
+
+#~ msgid "Sorry for that, please try again later or"
+#~ msgstr "نأسف على هذا، من فضلك جرب لاحقا أو"
+
+#~ msgid "ProductImage"
+#~ msgstr "صورة المنتج"
+
+#~ msgid "ProductImages"
+#~ msgstr "صور المنتجات"

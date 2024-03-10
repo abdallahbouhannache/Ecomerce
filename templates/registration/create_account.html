@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static i18n%}
+{% load crispy_forms_tags %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{% trans "Create Account" %}{% endblock title %}
+
+{% block content %}
+
+<div {% if LANG_CODE == "ar" %}dir="rtl"{% endif %} class="container text-center">
+    <div class="card text-center mt-3">
+        <div class="card-header">
+            <h2>{% trans "Create Account" %}</h2>
+            <p><b>{% trans "If you already have an account" %}, <a href="{% url 'login' %}">{% trans "Click Here" %}!</a></b></p>
+        </div>
+        <div class="card-body">
+            <form method="post" class="text-start">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-check pb-2">
+                    <input class="form-check-input" type="radio" name="confirmTermOfUse" id="confirmTermOfUse2" checked>
+                    <label class="form-check-label" for="confirmTermOfUse2">
+                        {% trans "By creating this account, you agree to the" %} <a href="/page/term-of-use/">{% trans "Terms of Use" %}</a> {% trans "and" %} <a href="/page/privacy-policy/">{% trans "Privacy Policy" %}</a>
+                    </label>
+                </div>
+                <div class="text-start">
+                    <button class="btn btn-primary" type="submit">{% trans "Create Account" %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+
+{% endblock content %}
+
+
+{% block script %}
+
+    {% include 'membership/update_commune.html' %}
+
+{% endblock script %}

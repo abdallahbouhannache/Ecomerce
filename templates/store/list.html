@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load multi_values %}
+
+{% block title %}
+    {% for store in stores %}
+        {% if store.slug in request.path %}
+            {{store}}
+        {% endif %}
+    {% endfor %}
+{% endblock title %}
+
+
+{% block content %}
+    <div class="container text-center mt-3" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <h1 class="text-start">
+            {% for store in stores %}
+                {% if store.slug in request.path %}
+                    {{store}}
+                {% endif %}
+            {% endfor %}
+        </h1>
+        <hr>
+        <div class="row">
+            {% include 'store/leftside_bar.html' %}
+            <div class="col-md-9 border rounded text-start">
+                <div class="add-product p-2">
+                    <a class="text-danger" href="add"><b><i class="fas fa-plus-circle"></i> {% trans "ADD NEW PRODUCT" %}</b></a>
+                </div>
+                {% if active_store_products %}
+                {% include 'store/widgets/filters.html' %}
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">{% trans "Product" %}</th>
+                                <th scope="col">{% trans "Stock" %}</th>
+                                <th scope="col">{% trans "Price" %}</th>
+                                <th scope="col">{% trans "Commission" %}</th>
+                                <th scope="col">{% trans "Purchases" %}</th>
+                                <th scope="col">{% trans "Rating" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for product in active_store_products %}
+                                {% if not product.deleted %}
+                                <tr>
+                                    <td>
+                                        {% if product.show %}
+                                            <i class="fas fa-vote-yea text-success"></i>
+                                        {% else %}
+                                            <i class="fas fa-user-clock text-danger"></i>
+                                        {% endif %}
+                                    </td>
+                                    <th scope="row">
+                                        <a href="{% url 'store_update_product' product.store.slug product.slug %}" style="color:black;">{{product|multi_name}}</a>
+                                    </th>
+                                    <td>{{product.stock}}</td>
+                                    <td class="nowrap">{{product.current_price}} {% trans "DA" %}</td>
+                                    <td class="nowrap">{{product.commission}} {% trans "DA" %}</td>
+                                    <td>{{product.purchases}}</td>
+                                    <td>
+                                        {% if product.rating == 5 %}
+                                            <img src="{% static 'stars/5.svg' %}" alt="5 Stars">
+                                        {% elif product.rating == 4 %}
+                                            <img src="{% static 'stars/4.svg' %}" alt="4 Stars">
+                                        {% elif product.rating == 3 %}
+                                            <img src="{% static 'stars/3.svg' %}" alt="3 Stars">
+                                        {% elif product.rating == 2 %}
+                                            <img src="{% static 'stars/2.svg' %}" alt="2 Stars">
+                                        {% elif product.rating == 1 %}
+                                            <img src="{% static 'stars/1.svg' %}" alt="1 Star">
+                                        {% elif product.rating == 0 %}
+                                            <img src="{% static 'stars/0.svg' %}" alt="0 Star">
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <div class="text-center pt-3">
+                        <p>{% trans "There is no products to display" %}</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

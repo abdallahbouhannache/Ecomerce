@@ -1,0 +1,60 @@
+{% load static i18n %}
+{% get_current_language as LANG_CODE %}
+{% load multi_values %}
+
+<div class="navbar-sticky bg-light">
+    <div class="navbar navbar-expand-lg navbar-light">
+        {% comment %} Logo {% endcomment %}
+        <div class="container">
+            <a class="navbar-brand d-none d-sm-block flex-shrink-0" href="/"><img
+                    src="{% static 'logo/logo-black.svg' %}" width="142" alt="elamanecc"></a>
+            <a class="navbar-brand d-sm-none flex-shrink-0 me-2" href="/"><img
+                    src="{% static 'logo/logo-black.svg' %}" width="120" alt="elamanecc"></a>
+            <form method="get" class="input-group d-none d-lg-flex mx-4 text-start">
+                <input name="search" class="form-control rounded-end pe-5" type="text" placeholder="{% trans "Search for products" %}">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                {% comment %} Humberger Menu {% endcomment %}
+                <button class="navbar-toggler ml-1 mr-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% comment %} Categories {% endcomment %}
+                <button class="navbar-tool dropdown ms-3 cart-style ml-1 mr-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fas fa-folder-minus"></i>
+                </button>
+                {% comment %} Cart {% endcomment %}
+                <div onclick="window.location.href = '{% url 'cart' %}';" class="navbar-tool dropdown ms-3 cart-style ml-1 mr-1">
+                    <i class="fas fa-shopping-cart"></i>
+                    <sup class="cart-notification">{{cart|length}}</sup>
+                </div>
+                {% if not request.user.is_authenticated %}
+                    {% comment %} Login {% endcomment %}
+                    <div onclick="window.location.href = '{% url 'login' %}'" class="navbar-tool dropdown ms-3 cart-style ml-1 mr-1">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>   
+                {% else %}
+                    {% comment %} Account {% endcomment %}
+                    <div onclick="window.location.href = '{% url 'account_display' %}'" class="navbar-tool dropdown ms-3 cart-style ml-1 mr-1">
+                        <i class="fas fa-user"></i>
+                    </div>   
+                    {% comment %} Logout {% endcomment %}
+                    <div onclick="window.location.href = '{% url 'logout' %}?next=/';" class="navbar-tool dropdown ms-3 cart-style ml-1 mr-1">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>   
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2 {% if LANG_CODE == "ar" %}text-right{% endif %}" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Search-->
+                <form method="get" class="input-group d-lg-none my-3">
+                    <input name="search" class="form-control rounded-start" type="text" placeholder="{% trans "Search for products" %}">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

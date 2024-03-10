@@ -1,0 +1,43 @@
+{
+    "name": "الأمان للإتصال والتواصل",
+    "short_name": "elamanecc",
+    "description": "شركة الأمان للإتصال والتواصل في التجارة الإلكترونية",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#343A40",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/static/logo/icon/ic_launcher48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/static/logo/icon/ic_launcher72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/static/logo/icon/ic_launcher96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/static/logo/icon/ic_launcher144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/static/logo/icon/ic_launcher192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/static/logo/icon/ic_launcher512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

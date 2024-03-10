@@ -1,0 +1,12 @@
+{% load static %}
+
+<div class="carousel">
+    {% if carousel %}
+        {% for slider in carousel %}
+            <div><img class="carousel-img" src="{{slider.image.url}}" alt="{{slider.name}}"></div>
+        {% endfor %}
+    {% else %}
+            <div><img class="carousel-img" src="{% static '02.jpeg' %}" alt="Default 1"></div>
+            <div><img class="carousel-img" src="{% static '03.jpeg' %}" alt="Default 1"></div>
+    {% endif %}
+</div>

@@ -1,0 +1,23 @@
+{% load i18n static %}
+{% load multi_values %}
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">{% trans "Categories" %}</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    {% if categories %}
+      <ul >
+        {% for category in categories %}
+            <li>
+                <a class="text-secondary nowrap dropdown-item" href="?category={{category.slug}}"><i class="{{category.icon}}"></i> {{category|multi_name}}</a>
+            </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>{% trans "There are not categories" %}</p>
+    {% endif %}
+  </div>
+</div>

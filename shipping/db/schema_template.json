@@ -1,0 +1,27 @@
+{
+    "options":{
+        "measruing_unit":"",
+        "currency":""
+    },
+    "data":{
+        "hangar_name": {
+            "wilaya_id":{
+                "id":0,
+                "name":"",
+                "ar_name":"",
+                "distance_between":0,
+                "initial_price":0.00,
+                "postal_code":"",
+                "communes":{
+                    "commune_id":{
+                        "id":0,
+                        "name":"",
+                        "ar_name":"",
+                        "distance_between":0,
+                        "initial_price":0.00
+                    }
+                }
+            }
+        }
+    }
+}

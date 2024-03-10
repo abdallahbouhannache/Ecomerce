@@ -1,0 +1,44 @@
+{% load static i18n %}
+{% load crispy_forms_tags %}
+
+<form method="post" class="mt-3">
+    {% csrf_token %}
+    <h1>{% trans "Confirm Purchase" %}</h1>
+    <a href="{% url 'account_display' %}?next={% url 'cart' %}" alt="{% trans "Update Profile" %}">{% trans "If you want to change shipping informations, click here." %}</a>
+    <hr>
+    <div class="row">
+        <div class="form-group col-md-12 mb-0">
+            {% trans "Full Name" %}: {{ data.first_name }} {{ data.last_name }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6 mb-0">
+            {% trans "Phone Number" %}: {{ data.phone_number }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-12 mb-0">
+            {% trans "Address" %}: {{ data.address }}, {{ data.wilaya }}, {{ data.commune }} - {{ data.zip_code }}
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="row">
+        <div class="form-group col-md-12 mb-0">
+            {{ form.payment_method|as_crispy_field }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-12 mb-0">
+            {{ form.captcha|as_crispy_field }}
+        </div>
+    </div>
+
+    <div class="d-grid gap-2">
+        <button id="confirmOrderButton" type="submit" class="btn btn-warning btn-block" style="border-radius: 5rem; !important">{% trans "Confirm Order" %}</button>
+    </div>
+</form>

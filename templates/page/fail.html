@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% get_current_language as LANG_CODE %}
+
+{% block title %}{% trans "Payment Failed" %}{% endblock title %}
+
+
+{% block content %}
+
+    <div class="container p-2 mt-5 text-center" {% if LANG_CODE == "ar" %}dir="rtl"{% endif %}>
+        <div class="payment-content p-3">
+            <i style="font-size:72px;" class="fas fa-exclamation-triangle text-danger m-2"></i>
+            <h3>{% trans "Payment Failed" %}!</h3>
+            <p class='text-muted'><span id='error_msg'>{{error_msg}}</span>, {% trans "Error code" %}: 	<span id='error_code'>{{error_code}}</span> </p>
+            <p id='action_description'>{{action_description}}</p>
+            <span>{% trans "The SATIM 3020 toll-free number" %}<span/> <img alt="3020" src="https://certweb.satim.dz/img/3020.png">
+            <br>
+            <a href="/">Back to Home page</a>
+        </div>
+    </div>
+
+{% endblock content %}

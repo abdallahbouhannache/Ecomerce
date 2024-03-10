@@ -1,0 +1,22 @@
+{% load i18n %}
+
+<!-- Delete Modal -->
+<div class="modal fade" id="openModal{{order.id}}" tabindex="-1" aria-labelledby="openModal{{order.id}}Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="openModal{{order.id}}Label">{% trans "Cancel Order" %}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body modal-wrapper">
+        <i class="fas fa-exclamation-circle modal-icon-warning"></i>
+        <div>{% trans "Are you sure you want to cancel the order Nº" %} {{order.id}} ?<div>
+        <small>{% trans "You have the right to cancel the bill within 24 hours٫" %}</small>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans "Close" %}</button>
+        <a href="{% url 'order-delete' order.id %}" class="btn btn-danger">{% trans "Confirm" %}</a>
+      </div>
+    </div>
+  </div>
+</div>
