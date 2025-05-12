@@ -4,7 +4,7 @@ import requests, urllib
 from django.conf import settings
 from django.db import transaction
 from django.utils.translation import get_language
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 # Home
 from home.models import Bill
 

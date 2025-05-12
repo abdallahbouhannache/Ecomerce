@@ -2,7 +2,7 @@
 import json
 # Django
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 from shipping.utils.populate import populate_wilaya_communes, update_database_json
 

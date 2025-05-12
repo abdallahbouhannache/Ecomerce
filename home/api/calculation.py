@@ -1,5 +1,5 @@
 # Django
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
 # Django REST

@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
+# seetheroot123
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
@@ -32,9 +32,10 @@ SATIM_USERNAME = config('SATIM_USERNAME')
 SATIM_PASSWORD = config('SATIM_PASSWORD')
 SATIM_ID       = config('SATIM_ID')
 
-SATIM_CREATE_API  = "https://test.satim.dz/payment/rest/register.do?"
-SATIM_CONFIRM_API = "https://test.satim.dz/payment/rest/confirmOrder.do?"
-SATIM_REFUND_API  = "https://test.satim.dz/payment/rest/refund.do?"
+# SATIM API Endpoints
+SATIM_CREATE_API = config('SATIM_CREATE_API')
+SATIM_CONFIRM_API = config('SATIM_CONFIRM_API')
+SATIM_REFUND_API = config('SATIM_REFUND_API')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
@@ -43,10 +44,7 @@ HTTP_PROTOCOL = config("HTTP_PROTOCOL") # http local and https in production
 HTTP_HOST = config("HTTP_HOST") # 127.0.0.1:8000 local and www.elamanecc.com.dz in production
 
 
-if DEBUG:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = ["www.elamanecc.com.dz", "elamanecc.com.dz"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -63,7 +61,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'ckeditor',
-    'captcha',
+    'django_recaptcha',
     'maintenance_mode',
     # My Apps
     'home',
@@ -113,24 +111,31 @@ WSGI_APPLICATION = 'src.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if DEBUG:
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
-    }
-else:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASS'),
-        'HOST': 'localhost',
-        'PORT': '',
-    }
 }
+
+# if DEBUG:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config('DB_NAME'),
+#         'USER': config('DB_USER'),
+#         'PASSWORD': config('DB_PASS'),
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 # Shipping DB
 SHIPPING_SCHEMA = BASE_DIR / "shipping/db/schema.json"
@@ -161,15 +166,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
 # LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'ar'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Africa/Algiers'
 
 USE_I18N = True
 
 LANGUAGES = [
-    ['ar', "العربية"],
     ['en', "English"],
+    ['ar', "العربية"],
     ['fr', "French"],
 ]
 
@@ -181,7 +186,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-SELENIUM_DRIVER = BASE_DIR / 'src/chromedriver'
+# SELENIUM_DRIVER = BASE_DIR / 'src/chromedriver'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -201,18 +206,22 @@ if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'elamane4debugging@gmail.com'
-EMAIL_HOST_PASSWORD = config('GMAIL_PASS')
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'elamane4debugging@gmail.com'
-ADMIN_EMAIL = 'elamane4debugging@gmail.com'
+# Email
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+ADMIN_EMAIL = config('ADMIN_EMAIL')
 
 
 # Error tracking
-ADMINS = [('Dev', 'okba2fb@gmail.com'), ('elamanecc', 'elamane4debugging@gmail.com')]
 
+# Error tracking
+ADMINS = [
+    tuple(admin.split(',')) for admin in config('ADMINS').split(';')
+]
 
 
 # Forms

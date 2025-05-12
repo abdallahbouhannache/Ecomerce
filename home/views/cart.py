@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.shortcuts import render, redirect
 from django.utils.decorators import method_decorator
 from django.contrib import messages
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.db import transaction
 from django.contrib.auth.decorators import login_required
 # Home

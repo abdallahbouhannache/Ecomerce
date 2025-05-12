@@ -5,7 +5,7 @@ from django.dispatch import receiver
 from django.utils.text import slugify
 from django.db.models.signals import post_save
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 # Membership
 from membership.abstractions import Shipping
 # Store
@@ -44,4 +44,3 @@ def slugify_name(sender, instance, created, **kwargs):
         extra_text = str(uuid.uuid4())[0:8]
         instance.slug = f"{text}-{extra_text}"
         instance.save()
-

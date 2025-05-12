@@ -1,11 +1,11 @@
 # Django
 from django import forms
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 # Home
 from home.models import Bill, Product
 from home.constants import PAYMENT_METHODS
 # Captcha
-from captcha.fields import ReCaptchaField
+from django_recaptcha.fields import ReCaptchaField
 
 
 class OrderForm(forms.Form):

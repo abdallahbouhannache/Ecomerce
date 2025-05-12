@@ -1,7 +1,7 @@
 # Python
 import json
 # Django
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 # Django REST
 from rest_framework.views import APIView
