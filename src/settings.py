@@ -10,9 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 from decouple import config
 from src.ckeditor import CKEDITOR_CONFIGS
+import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -72,6 +75,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -111,12 +115,45 @@ WSGI_APPLICATION = 'src.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=os.environ.get('DATABASE_URL'),
+#         conn_max_age=600,
+#         ssl_require=True
+#     )
+# }
+
+# DATABASES = {
+#     'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+# }
+
+
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+    'default': dj_database_url.config(default='mysql://u287902405_root:vpsPass@1375@srv1471.hstgr.io:3306/u287902405_djangodb')
 }
+    
+
+# main-hosting.com
+
+# default='mysql://u287902405_root:vpsPass@1375@u287902405_djangodb.main-hosting.com:3306/u287902405_djangodb'
+
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+# }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=os.environ.get(str(BASE_DIR / 'db.sqlite3')),
+#         conn_max_age=600,
+#         ssl_require=True
+#     )
+# }
+
 
 # if DEBUG:
 #     DATABASES = {
@@ -135,6 +172,14 @@ DATABASES = {
 #         'HOST': 'localhost',
 #         'PORT': '',
 #     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'your_database_name',
+    #     'USER': 'your_database_user',
+    #     'PASSWORD': 'your_database_password',
+    #     'HOST': 'mysql.hostinger.com',  # Replace with your Hostinger MySQL server's hostname
+    #     'PORT': '3306',
+    # }
 # }
 
 # Shipping DB
@@ -195,6 +240,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = f'{BASE_DIR}{STATIC_URL}'
 STATICFILES_URL = '/staticfiles/'
 STATICFILES_DIRS = [f'{BASE_DIR}{STATICFILES_URL}',]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Media 
 MEDIA_URL = '/media/'
