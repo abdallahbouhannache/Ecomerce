@@ -75,7 +75,7 @@ soupsieve==2.6
 sqlparse==0.5.1
 typing_extensions==4.12.2
 tzdata==2025.2
-urllib3==1.26.16
+urllib3
 validators==0.20.0
 watchdog==4.0.1
 wcwidth==0.2.13
