@@ -42,6 +42,7 @@ SATIM_REFUND_API = config('SATIM_REFUND_API')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DEBUG", cast=bool)
+
 DEBUG = True
 
 HTTP_PROTOCOL = config("HTTP_PROTOCOL") # http local and https in production
