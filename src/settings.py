@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 from decouple import config
 from src.ckeditor import CKEDITOR_CONFIGS
-import dj_database_url
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,9 +130,9 @@ WSGI_APPLICATION = 'src.wsgi.application'
 # }
 
 
-DATABASES = {
-    'default': dj_database_url.config(default='mysql://u287902405_root:vpsPass@1375@srv1471.hstgr.io:3306/u287902405_djangodb')
-}
+# DATABASES = {
+#     'default': dj_database_url.config(default='mysql://u287902405_root:vpsPass@1375@srv1471.hstgr.io:3306/u287902405_djangodb')
+# }
     
 
 # main-hosting.com
@@ -153,7 +153,12 @@ DATABASES = {
 #         ssl_require=True
 #     )
 # }
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # if DEBUG:
 #     DATABASES = {
