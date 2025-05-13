@@ -43,7 +43,7 @@ SATIM_REFUND_API = config('SATIM_REFUND_API')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DEBUG", cast=bool)
 
-DEBUG = True
+DEBUG = False
 
 HTTP_PROTOCOL = config("HTTP_PROTOCOL") # http local and https in production
 HTTP_HOST = config("HTTP_HOST") # 127.0.0.1:8000 local and www.elamanecc.com.dz in production
